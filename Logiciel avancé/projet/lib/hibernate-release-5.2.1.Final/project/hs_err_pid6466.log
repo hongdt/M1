@@ -1,0 +1,1107 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fabc8f694c5, pid=6466, tid=140375384647424
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_60-b07) (build 1.8.0_60-ea-b07)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.60-b07 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [ld-linux-x86-64.so.2+0x94c5]  do_lookup_x+0x85
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fabc007e000):  JavaThread "Finalizer" daemon [_thread_in_native, id=6477, stack(0x00007fabb0dfe000,0x00007fabb0eff000)]
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000068
+
+Registers:
+RAX=0x0000000000000040, RBX=0x00007fabc915d9b8, RCX=0x000000000000000d, RDX=0x00000000000003f3
+RSP=0x00007fabb0efca40, RBP=0x0000000000000002, RSI=0x00040142400c9d40, RDI=0x00007fab94000bb0
+R8 =0x00007fabc856dd30, R9 =0x00007fab2d861338, R10=0x0000000000000003, R11=0x0000000000000000
+R12=0x00007fabb0efcc68, R13=0x00007fab2d8670c0, R14=0x0000000000000003, R15=0x0000000000000000
+RIP=0x00007fabc8f694c5, EFLAGS=0x0000000000010202, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007fabb0efca40)
+0x00007fabb0efca40:   00007fab94000bb0 00007fabc857adc8
+0x00007fabb0efca50:   0000000000000000 00007fabb0efcab4
+0x00007fabb0efca60:   00007fabb0efcab8 00000000ace3668d
+0x00007fabb0efca70:   0000000002b38d9a 00007fab0000000d
+0x00007fabb0efca80:   00007fabb0efcb90 00007fabb0efcb80
+0x00007fabb0efca90:   00007fabb0efd350 00007fabc7eb92ab
+0x00007fabb0efcaa0:   0000000000000000 00007fabc7eba0c6
+0x00007fabb0efcab0:   00000000b0efcb28 0000000000000000
+0x00007fabb0efcac0:   00007fabb0efd4a0 00007fab2d861408
+0x00007fabb0efcad0:   00007fabb0efcc20 00007fabb0efcc68
+0x00007fabb0efcae0:   0000000000000000 00007fab2d861080
+0x00007fabb0efcaf0:   0000000000000000 00007fabc8f69fb0
+0x00007fabb0efcb00:   0000000000000000 0000000000000000
+0x00007fabb0efcb10:   0000000000000002 0000000000000000
+0x00007fabb0efcb20:   0000000000000000 00007fab2d861080
+0x00007fabb0efcb30:   00007fabb1007c4d 0000000000000000
+0x00007fabb0efcb40:   0000000000000000 0000000000000000
+0x00007fabb0efcb50:   00007fab2d861408 00007fabb0efcb90
+0x00007fabb0efcb60:   00000000c59ca9b6 00007fabb0efcb80
+0x00007fabb0efcb70:   00000000ace3668d 00007fab94000bb0
+0x00007fabb0efcb80:   00000000ffffffff 0000000000000000
+0x00007fabb0efcb90:   0000000000000000 0000000000000000
+0x00007fabb0efcba0:   00007fabb10007a7 00000000eae46da0
+0x00007fabb0efcbb0:   0000000000001fa0 00007fabc007eaf8
+0x00007fabb0efcbc0:   00007fabc007e000 00007fabb0efcc90
+0x00007fabb0efcbd0:   00007fabb0efcfa0 00007fabb0efcc50
+0x00007fabb0efcbe0:   00007fabb0efcc50 00007fabb0efcfa8
+0x00007fabb0efcbf0:   00007fabb0efcc50 00007fab94000bb0
+0x00007fabb0efcc00:   0000000001970470 00007fabc9180c80
+0x00007fabb0efcc10:   0000000000000000 00007fab2d861080
+0x00007fabb0efcc20:   00007fabb0efcce0 00007fabc86a8353
+0x00007fabb0efcc30:   0000000000000002 0000000000000000 
+
+Instructions: (pc=0x00007fabc8f694c5)
+0x00007fabc8f694a5:   44 24 18 48 8d 44 24 78 48 89 44 24 20 89 f0 83
+0x00007fabc8f694b5:   e0 3f 89 44 24 38 0f 1f 44 00 00 49 8b 44 ed 00
+0x00007fabc8f694c5:   48 8b 58 28 4c 39 db 0f 84 ee 00 00 00 45 85 ff
+0x00007fabc8f694d5:   74 0d f6 83 14 03 00 00 03 0f 84 dc 00 00 00 f6 
+
+Register to memory mapping:
+
+RAX=0x0000000000000040 is an unknown value
+RBX=0x00007fabc915d9b8 is an unknown value
+RCX=0x000000000000000d is an unknown value
+RDX=0x00000000000003f3 is an unknown value
+RSP=0x00007fabb0efca40 is pointing into the stack for thread: 0x00007fabc007e000
+RBP=0x0000000000000002 is an unknown value
+RSI=0x00040142400c9d40 is an unknown value
+RDI=0x00007fab94000bb0 is an unknown value
+R8 =0x00007fabc856dd30: <offset 0x3d30> in /lib64/libc.so.6 at 0x00007fabc856a000
+R9 =0x00007fab2d861338 is an unknown value
+R10=0x0000000000000003 is an unknown value
+R11=0x0000000000000000 is an unknown value
+R12=0x00007fabb0efcc68 is pointing into the stack for thread: 0x00007fabc007e000
+R13=0x00007fab2d8670c0 is an unknown value
+R14=0x0000000000000003 is an unknown value
+R15=0x0000000000000000 is an unknown value
+
+
+Stack: [0x00007fabb0dfe000,0x00007fabb0eff000],  sp=0x00007fabb0efca40,  free space=1018k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [ld-linux-x86-64.so.2+0x94c5]  do_lookup_x+0x85
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 37301  java.lang.ClassLoader$NativeLibrary.find(Ljava/lang/String;)J (0 bytes) @ 0x00007fabb3e0e54c [0x00007fabb3e0e500+0x4c]
+j  java.lang.ClassLoader.findNative(Ljava/lang/ClassLoader;Ljava/lang/String;)J+49
+v  ~StubRoutines::call_stub
+j  com.kenai.jffi.Foreign.freeMemory(J)V+0
+j  com.kenai.jffi.MemoryIO.freeMemory(J)V+1
+j  com.kenai.jffi.NativeMethods$ResourceHolder.finalize()V+8
+J 15344% C2 java.lang.ref.Finalizer$FinalizerThread.run()V (55 bytes) @ 0x00007fabb36e72c4 [0x00007fabb36e6fe0+0x2e4]
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007fab2c24d800 JavaThread "Stdin handler" [_thread_blocked, id=26664, stack(0x00007faba1017000,0x00007faba1118000)]
+  0x00007fab64012800 JavaThread "Daemon worker Thread 4" [_thread_in_Java, id=26663, stack(0x00007faba131f000,0x00007faba1420000)]
+  0x00007fab64005800 JavaThread "Cancel handler" [_thread_blocked, id=26662, stack(0x00007faba1420000,0x00007faba1521000)]
+  0x00007fab6400b800 JavaThread "Handler for socket connection from /0:0:0:0:0:0:0:1:32772 to /0:0:0:0:0:0:0:1:55592" [_thread_in_native, id=26661, stack(0x00007faba1521000,0x00007faba1622000)]
+  0x00007fab70012000 JavaThread "Daemon Thread 4" [_thread_blocked, id=26660, stack(0x00007faba1622000,0x00007faba1723000)]
+  0x00007fab6074a800 JavaThread "File lock request listener" [_thread_in_native, id=6492, stack(0x00007faba0a9d000,0x00007faba0b9e000)]
+  0x00007fabc0b4d000 JavaThread "Incoming local TCP Connector on port 32772" [_thread_in_native, id=6484, stack(0x00007faba1723000,0x00007faba1824000)]
+  0x00007fabc00ca000 JavaThread "Service Thread" daemon [_thread_blocked, id=6482, stack(0x00007fabb08f9000,0x00007fabb09fa000)]
+  0x00007fabc00bc800 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=6481, stack(0x00007fabb09fa000,0x00007fabb0afb000)]
+  0x00007fabc00bb000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=6480, stack(0x00007fabb0afb000,0x00007fabb0bfc000)]
+  0x00007fabc00b8000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=6479, stack(0x00007fabb0bfc000,0x00007fabb0cfd000)]
+  0x00007fabc00b6800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=6478, stack(0x00007fabb0cfd000,0x00007fabb0dfe000)]
+=>0x00007fabc007e000 JavaThread "Finalizer" daemon [_thread_in_native, id=6477, stack(0x00007fabb0dfe000,0x00007fabb0eff000)]
+  0x00007fabc007c000 JavaThread "Reference Handler" daemon [_thread_blocked, id=6476, stack(0x00007fabb0eff000,0x00007fabb1000000)]
+  0x00007fabc0008800 JavaThread "main" [_thread_blocked, id=6467, stack(0x00007fabc9059000,0x00007fabc915a000)]
+
+Other Threads:
+  0x00007fabc0076800 VMThread [stack: 0x00007fabc400c000,0x00007fabc410d000] [id=6475]
+  0x00007fabc00cc800 WatcherThread [stack: 0x00007fabb07f8000,0x00007fabb08f9000] [id=6483]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 250368K, used 3359K [0x00000000eab00000, 0x00000000ffc80000, 0x0000000100000000)
+  eden space 167424K, 2% used [0x00000000eab00000,0x00000000eae47d00,0x00000000f4e80000)
+  from space 82944K, 0% used [0x00000000f4e80000,0x00000000f4e80000,0x00000000f9f80000)
+  to   space 79872K, 0% used [0x00000000fae80000,0x00000000fae80000,0x00000000ffc80000)
+ ParOldGen       total 699392K, used 271520K [0x00000000c0000000, 0x00000000eab00000, 0x00000000eab00000)
+  object space 699392K, 38% used [0x00000000c0000000,0x00000000d0928338,0x00000000eab00000)
+ Metaspace       used 127641K, capacity 133758K, committed 149632K, reserved 1175552K
+  class space    used 19055K, capacity 20582K, committed 22912K, reserved 1048576K
+
+Card table byte_map: [0x00007fabc6267000,0x00007fabc6468000] byte_map_base: 0x00007fabc5c67000
+
+Marking Bits: (ParMarkBitMap*) 0x00007fabc853eaa0
+ Begin Bits: [0x00007faba2000000, 0x00007faba3000000)
+ End Bits:   [0x00007faba3000000, 0x00007faba4000000)
+
+Polling page: 0x00007fabc917e000
+
+CodeCache: size=245760Kb used=98723Kb max_used=99120Kb free=147036Kb
+ bounds [0x00007fabb1000000, 0x00007fabb71c0000, 0x00007fabc0000000]
+ total_blobs=26032 nmethods=25104 adapters=837
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 7736.428 Thread 0x00007fabc00b8000 44188       4       com.sun.tools.javac.code.Types$Rewriter::visitTypeVar (10 bytes)
+Event: 7736.428 Thread 0x00007fabc00bb000 44189       4       com.sun.tools.javac.code.Types$Rewriter::visitTypeVar (56 bytes)
+Event: 7736.439 Thread 0x00007fabc00bb000 nmethod 44189 0x00007fabb52ad390 code [0x00007fabb52ad580, 0x00007fabb52adc48]
+Event: 7736.439 Thread 0x00007fabc00b8000 nmethod 44188 0x00007fabb5401c10 code [0x00007fabb5401e20, 0x00007fabb54024e8]
+Event: 7736.547 Thread 0x00007fabc00bb000 44190       4       com.sun.tools.javac.code.Symbol$ClassSymbol::getInterfaces (60 bytes)
+Event: 7736.564 Thread 0x00007fabc00bb000 nmethod 44190 0x00007fabb52a2bd0 code [0x00007fabb52a2da0, 0x00007fabb52a3438]
+Event: 7736.734 Thread 0x00007fabc00b8000 44191       4       com.sun.tools.javac.code.Types$9::visitType (10 bytes)
+Event: 7736.740 Thread 0x00007fabc00b8000 nmethod 44191 0x00007fabb52a1a10 code [0x00007fabb52a1c20, 0x00007fabb52a2230]
+Event: 7737.463 Thread 0x00007fabc00bc800 44192       1       java.util.zip.ZStreamRef::clear (6 bytes)
+Event: 7737.463 Thread 0x00007fabc00bc800 nmethod 44192 0x00007fabb540b9d0 code [0x00007fabb540bb20, 0x00007fabb540bc30]
+
+GC Heap History (10 events):
+Event: 7734.848 GC heap before
+{Heap before GC invocations=546 (full 14):
+ PSYoungGen      total 227328K, used 173145K [0x00000000eab00000, 0x00000000fe580000, 0x0000000100000000)
+  eden space 141824K, 100% used [0x00000000eab00000,0x00000000f3580000,0x00000000f3580000)
+  from space 85504K, 36% used [0x00000000f3580000,0x00000000f5416590,0x00000000f8900000)
+  to   space 83456K, 0% used [0x00000000f9400000,0x00000000f9400000,0x00000000fe580000)
+ ParOldGen       total 699392K, used 587723K [0x00000000c0000000, 0x00000000eab00000, 0x00000000eab00000)
+  object space 699392K, 84% used [0x00000000c0000000,0x00000000e3df2da8,0x00000000eab00000)
+ Metaspace       used 131378K, capacity 138374K, committed 149632K, reserved 1175552K
+  class space    used 19630K, capacity 21381K, committed 22912K, reserved 1048576K
+Event: 7734.881 GC heap after
+Heap after GC invocations=546 (full 14):
+ PSYoungGen      total 238592K, used 37069K [0x00000000eab00000, 0x00000000fe680000, 0x0000000100000000)
+  eden space 155136K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f4280000)
+  from space 83456K, 44% used [0x00000000f9400000,0x00000000fb833540,0x00000000fe580000)
+  to   space 83456K, 0% used [0x00000000f4280000,0x00000000f4280000,0x00000000f9400000)
+ ParOldGen       total 699392K, used 587723K [0x00000000c0000000, 0x00000000eab00000, 0x00000000eab00000)
+  object space 699392K, 84% used [0x00000000c0000000,0x00000000e3df2da8,0x00000000eab00000)
+ Metaspace       used 131378K, capacity 138374K, committed 149632K, reserved 1175552K
+  class space    used 19630K, capacity 21381K, committed 22912K, reserved 1048576K
+}
+Event: 7735.291 GC heap before
+{Heap before GC invocations=547 (full 14):
+ PSYoungGen      total 238592K, used 192205K [0x00000000eab00000, 0x00000000fe680000, 0x0000000100000000)
+  eden space 155136K, 100% used [0x00000000eab00000,0x00000000f4280000,0x00000000f4280000)
+  from space 83456K, 44% used [0x00000000f9400000,0x00000000fb833540,0x00000000fe580000)
+  to   space 83456K, 0% used [0x00000000f4280000,0x00000000f4280000,0x00000000f9400000)
+ ParOldGen       total 699392K, used 587723K [0x00000000c0000000, 0x00000000eab00000, 0x00000000eab00000)
+  object space 699392K, 84% used [0x00000000c0000000,0x00000000e3df2da8,0x00000000eab00000)
+ Metaspace       used 131384K, capacity 138374K, committed 149632K, reserved 1175552K
+  class space    used 19630K, capacity 21381K, committed 22912K, reserved 1048576K
+Event: 7735.336 GC heap after
+Heap after GC invocations=547 (full 14):
+ PSYoungGen      total 238592K, used 24240K [0x00000000eab00000, 0x00000000fec00000, 0x0000000100000000)
+  eden space 155136K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f4280000)
+  from space 83456K, 29% used [0x00000000f4280000,0x00000000f5a2c1a0,0x00000000f9400000)
+  to   space 78336K, 0% used [0x00000000f9f80000,0x00000000f9f80000,0x00000000fec00000)
+ ParOldGen       total 699392K, used 605552K [0x00000000c0000000, 0x00000000eab00000, 0x00000000eab00000)
+  object space 699392K, 86% used [0x00000000c0000000,0x00000000e4f5c278,0x00000000eab00000)
+ Metaspace       used 131384K, capacity 138374K, committed 149632K, reserved 1175552K
+  class space    used 19630K, capacity 21381K, committed 22912K, reserved 1048576K
+}
+Event: 7736.193 GC heap before
+{Heap before GC invocations=548 (full 14):
+ PSYoungGen      total 238592K, used 179376K [0x00000000eab00000, 0x00000000fec00000, 0x0000000100000000)
+  eden space 155136K, 100% used [0x00000000eab00000,0x00000000f4280000,0x00000000f4280000)
+  from space 83456K, 29% used [0x00000000f4280000,0x00000000f5a2c1a0,0x00000000f9400000)
+  to   space 78336K, 0% used [0x00000000f9f80000,0x00000000f9f80000,0x00000000fec00000)
+ ParOldGen       total 699392K, used 605552K [0x00000000c0000000, 0x00000000eab00000, 0x00000000eab00000)
+  object space 699392K, 86% used [0x00000000c0000000,0x00000000e4f5c278,0x00000000eab00000)
+ Metaspace       used 132705K, capacity 139760K, committed 149632K, reserved 1175552K
+  class space    used 19818K, capacity 21584K, committed 22912K, reserved 1048576K
+Event: 7736.240 GC heap after
+Heap after GC invocations=548 (full 14):
+ PSYoungGen      total 245760K, used 49057K [0x00000000eab00000, 0x00000000ff480000, 0x0000000100000000)
+  eden space 167424K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f4e80000)
+  from space 78336K, 62% used [0x00000000f9f80000,0x00000000fcf68460,0x00000000fec00000)
+  to   space 82944K, 0% used [0x00000000f4e80000,0x00000000f4e80000,0x00000000f9f80000)
+ ParOldGen       total 699392K, used 608190K [0x00000000c0000000, 0x00000000eab00000, 0x00000000eab00000)
+  object space 699392K, 86% used [0x00000000c0000000,0x00000000e51efbd8,0x00000000eab00000)
+ Metaspace       used 132705K, capacity 139760K, committed 149632K, reserved 1175552K
+  class space    used 19818K, capacity 21584K, committed 22912K, reserved 1048576K
+}
+Event: 7736.759 GC heap before
+{Heap before GC invocations=549 (full 14):
+ PSYoungGen      total 245760K, used 216481K [0x00000000eab00000, 0x00000000ff480000, 0x0000000100000000)
+  eden space 167424K, 100% used [0x00000000eab00000,0x00000000f4e80000,0x00000000f4e80000)
+  from space 78336K, 62% used [0x00000000f9f80000,0x00000000fcf68460,0x00000000fec00000)
+  to   space 82944K, 0% used [0x00000000f4e80000,0x00000000f4e80000,0x00000000f9f80000)
+ ParOldGen       total 699392K, used 608190K [0x00000000c0000000, 0x00000000eab00000, 0x00000000eab00000)
+  object space 699392K, 86% used [0x00000000c0000000,0x00000000e51efbd8,0x00000000eab00000)
+ Metaspace       used 132705K, capacity 139760K, committed 149632K, reserved 1175552K
+  class space    used 19818K, capacity 21584K, committed 22912K, reserved 1048576K
+Event: 7736.806 GC heap after
+Heap after GC invocations=549 (full 14):
+ PSYoungGen      total 250368K, used 6003K [0x00000000eab00000, 0x00000000ffc80000, 0x0000000100000000)
+  eden space 167424K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f4e80000)
+  from space 82944K, 7% used [0x00000000f4e80000,0x00000000f545cf38,0x00000000f9f80000)
+  to   space 79872K, 0% used [0x00000000fae80000,0x00000000fae80000,0x00000000ffc80000)
+ ParOldGen       total 699392K, used 655825K [0x00000000c0000000, 0x00000000eab00000, 0x00000000eab00000)
+  object space 699392K, 93% used [0x00000000c0000000,0x00000000e80745c8,0x00000000eab00000)
+ Metaspace       used 132705K, capacity 139760K, committed 149632K, reserved 1175552K
+  class space    used 19818K, capacity 21584K, committed 22912K, reserved 1048576K
+}
+Event: 7736.806 GC heap before
+{Heap before GC invocations=550 (full 15):
+ PSYoungGen      total 250368K, used 6003K [0x00000000eab00000, 0x00000000ffc80000, 0x0000000100000000)
+  eden space 167424K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f4e80000)
+  from space 82944K, 7% used [0x00000000f4e80000,0x00000000f545cf38,0x00000000f9f80000)
+  to   space 79872K, 0% used [0x00000000fae80000,0x00000000fae80000,0x00000000ffc80000)
+ ParOldGen       total 699392K, used 655825K [0x00000000c0000000, 0x00000000eab00000, 0x00000000eab00000)
+  object space 699392K, 93% used [0x00000000c0000000,0x00000000e80745c8,0x00000000eab00000)
+ Metaspace       used 132705K, capacity 139760K, committed 149632K, reserved 1175552K
+  class space    used 19818K, capacity 21584K, committed 22912K, reserved 1048576K
+Event: 7737.461 GC heap after
+Heap after GC invocations=550 (full 15):
+ PSYoungGen      total 250368K, used 0K [0x00000000eab00000, 0x00000000ffc80000, 0x0000000100000000)
+  eden space 167424K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f4e80000)
+  from space 82944K, 0% used [0x00000000f4e80000,0x00000000f4e80000,0x00000000f9f80000)
+  to   space 79872K, 0% used [0x00000000fae80000,0x00000000fae80000,0x00000000ffc80000)
+ ParOldGen       total 699392K, used 271520K [0x00000000c0000000, 0x00000000eab00000, 0x00000000eab00000)
+  object space 699392K, 38% used [0x00000000c0000000,0x00000000d0928338,0x00000000eab00000)
+ Metaspace       used 127640K, capacity 133758K, committed 149632K, reserved 1175552K
+  class space    used 19055K, capacity 20582K, committed 22912K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 7720.076 Thread 0x00007fab64012800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00007fabb2a406a0 method=org.codehaus.groovy.reflection.ParameterTypes.makeCommonArray([Ljava/lang/Object;ILjava/lang/Class;)Ljava/lang/Object; @ 46
+Event: 7723.161 Thread 0x00007fab64012800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fabb6efbd90 method=org.jboss.jdeparser.SourceFileWriter$1.addIndent(Lorg/jboss/jdeparser/Indent;Lorg/jboss/jdeparser/FormatPreferences;Ljava/lang/StringBuilder;)V @ 27
+Event: 7723.170 Thread 0x00007fab64012800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fabb6efbd90 method=org.jboss.jdeparser.SourceFileWriter$1.addIndent(Lorg/jboss/jdeparser/Indent;Lorg/jboss/jdeparser/FormatPreferences;Ljava/lang/StringBuilder;)V @ 27
+Event: 7727.287 Thread 0x00007fab64012800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fabb4eedd88 method=com.sun.tools.javac.comp.Attr.checkInit(Lcom/sun/tools/javac/tree/JCTree;Lcom/sun/tools/javac/comp/Env;Lcom/sun/tools/javac/code/Symbol$VarSymbol;Z)V @ 61
+Event: 7734.882 Thread 0x00007fab64012800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fabb602e8b4 method=java.util.WeakHashMap$HashIterator.hasNext()Z @ 76
+Event: 7734.884 Thread 0x00007fabc007e000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fabb12659f8 method=java.util.WeakHashMap.expungeStaleEntries()V @ 53
+Event: 7736.169 Thread 0x00007fab64012800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fabb4eedd88 method=com.sun.tools.javac.comp.Attr.checkInit(Lcom/sun/tools/javac/tree/JCTree;Lcom/sun/tools/javac/comp/Env;Lcom/sun/tools/javac/code/Symbol$VarSymbol;Z)V @ 61
+Event: 7736.272 Thread 0x00007fab64012800 Uncommon trap: reason=speculate_class_check action=maybe_recompile pc=0x00007fabb566030c method=com.sun.tools.javac.code.Type$ClassType.isRaw()Z @ 28
+Event: 7737.462 Thread 0x00007fabc007e000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fabb2c11dac method=java.util.Vector.removeElementAt(I)V @ 75
+Event: 7737.463 Thread 0x00007fabc007e000 Uncommon trap: reason=null_check action=make_not_entrant pc=0x00007fabb6b954a4 method=org.jruby.internal.runtime.ThreadService.getCurrentContext()Lorg/jruby/runtime/ThreadContext; @ 43
+
+Internal exceptions (10 events):
+Event: 7720.705 Thread 0x00007fab64012800 NullPointerException at vtable entry 0x00007fabb1407c30
+Event: 7720.705 Thread 0x00007fab64012800 Exception <a 'java/lang/NullPointerException'> (0x00000000ec880078) thrown at [/RE-WORK/workspace/8-2-build-linux-amd64/jdk8u60/3194.nc/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 605]
+Event: 7720.705 Thread 0x00007fab64012800 NullPointerException at vtable entry 0x00007fabb1407c30
+Event: 7720.705 Thread 0x00007fab64012800 Exception <a 'java/lang/NullPointerException'> (0x00000000ec884c28) thrown at [/RE-WORK/workspace/8-2-build-linux-amd64/jdk8u60/3194.nc/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 605]
+Event: 7731.705 Thread 0x00007fab64012800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000ec93d850) thrown at [/RE-WORK/workspace/8-2-build-linux-amd64/jdk8u60/3194.nc/hotspot/src/share/vm/prims/jvm.cpp, line 1382]
+Event: 7731.705 Thread 0x00007fab64012800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000ec93deb8) thrown at [/RE-WORK/workspace/8-2-build-linux-amd64/jdk8u60/3194.nc/hotspot/src/share/vm/prims/jvm.cpp, line 1382]
+Event: 7731.706 Thread 0x00007fab64012800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000ec93fa80) thrown at [/RE-WORK/workspace/8-2-build-linux-amd64/jdk8u60/3194.nc/hotspot/src/share/vm/prims/jvm.cpp, line 1382]
+Event: 7731.706 Thread 0x00007fab64012800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000ec9400e8) thrown at [/RE-WORK/workspace/8-2-build-linux-amd64/jdk8u60/3194.nc/hotspot/src/share/vm/prims/jvm.cpp, line 1382]
+Event: 7731.709 Thread 0x00007fab64012800 Exception <a 'java/io/FileNotFoundException'> (0x00000000ecb1ffe8) thrown at [/RE-WORK/workspace/8-2-build-linux-amd64/jdk8u60/3194.nc/hotspot/src/share/vm/prims/jni.cpp, line 709]
+Event: 7737.463 Thread 0x00007fabc007e000 Implicit null exception at 0x00007fabb6b953b1 to 0x00007fabb6b95495
+
+Events (10 events):
+Event: 7737.462 Executing VM operation: BulkRevokeBias done
+Event: 7737.462 Thread 0x00007fabc007e000 Uncommon trap: trap_request=0xffffff65 fr.pc=0x00007fabb2c11dac
+Event: 7737.462 Thread 0x00007fabc007e000 DEOPT PACKING pc=0x00007fabb2c11dac sp=0x00007fabb0efd6f0
+Event: 7737.462 Thread 0x00007fabc007e000 DEOPT UNPACKING pc=0x00007fabb1005229 sp=0x00007fabb0efd6b0 mode 2
+Event: 7737.462 Executing VM operation: RevokeBias
+Event: 7737.462 Executing VM operation: RevokeBias done
+Event: 7737.463 Thread 0x00007fabc007e000 Uncommon trap: trap_request=0xfffffff4 fr.pc=0x00007fabb6b954a4
+Event: 7737.463 Thread 0x00007fabc007e000 DEOPT PACKING pc=0x00007fabb6b954a4 sp=0x00007fabb0efd640
+Event: 7737.463 Thread 0x00007fabc007e000 DEOPT UNPACKING pc=0x00007fabb1005229 sp=0x00007fabb0efd618 mode 2
+Event: 7737.463 Thread 0x00007fabc00bc800 flushing nmethod 0x00007fabb11547d0
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 00:23 1072408                            /opt/jdk1.8.0_60/bin/java
+00600000-00601000 rw-p 00000000 00:23 1072408                            /opt/jdk1.8.0_60/bin/java
+01970000-019b9000 rw-p 00000000 00:00 0                                  [heap]
+c0000000-eab00000 rw-p 00000000 00:00 0 
+eab00000-ffc80000 rw-p 00000000 00:00 0 
+ffc80000-100000000 ---p 00000000 00:00 0 
+100000000-101660000 rw-p 00000000 00:00 0 
+101660000-140000000 ---p 00000000 00:00 0 
+7fab24f9f000-7fab2515f000 rw-p 00000000 00:00 0 
+7fab2515f000-7fab2519f000 ---p 00000000 00:00 0 
+7fab2519f000-7fab2539f000 rw-p 00000000 00:00 0 
+7fab2539f000-7fab253b1000 r-xp 00000000 00:27 3025353                    /tmp/jffi6712085094459224612.tmp
+7fab253b1000-7fab255b0000 ---p 00012000 00:27 3025353                    /tmp/jffi6712085094459224612.tmp
+7fab255b0000-7fab255b1000 rw-p 00011000 00:27 3025353                    /tmp/jffi6712085094459224612.tmp
+7fab255b1000-7fab257b1000 rw-p 00000000 00:00 0 
+7fab257b1000-7fab259b1000 rw-p 00000000 00:00 0 
+7fab259b1000-7fab25bb1000 rw-p 00000000 00:00 0 
+7fab25bb1000-7fab25db1000 rw-p 00000000 00:00 0 
+7fab25db1000-7fab25fb1000 rw-p 00000000 00:00 0 
+7fab25fb1000-7fab261b1000 rw-p 00000000 00:00 0 
+7fab261b1000-7fab263b1000 rw-p 00000000 00:00 0 
+7fab263b1000-7fab265b1000 rw-p 00000000 00:00 0 
+7fab267c3000-7fab269c3000 rw-p 00000000 00:00 0 
+7fab269c3000-7fab26bc3000 rw-p 00000000 00:00 0 
+7fab26bc3000-7fab26dc3000 rw-p 00000000 00:00 0 
+7fab26dc3000-7fab26fc3000 rw-p 00000000 00:00 0 
+7fab26fc3000-7fab270f2000 r--s 013ea000 00:23 14189853                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jruby/jruby-complete/1.7.16.1/b76682bd0966a31dab60dc5e275d8b28ac17c38f/jruby-complete-1.7.16.1.jar
+7fab270f2000-7fab272f2000 rw-p 00000000 00:00 0 
+7fab272f2000-7fab274f2000 rw-p 00000000 00:00 0 
+7fab274f2000-7fab276f2000 rw-p 00000000 00:00 0 
+7fab276f2000-7fab278f2000 rw-p 00000000 00:00 0 
+7fab278f2000-7fab278f5000 ---p 00000000 00:00 0 
+7fab278f5000-7fab279f3000 rw-p 00000000 00:00 0 
+7fab279f3000-7fab279f6000 ---p 00000000 00:00 0 
+7fab279f6000-7fab27af4000 rw-p 00000000 00:00 0 
+7fab27af4000-7fab27af7000 ---p 00000000 00:00 0 
+7fab27af7000-7fab27bf5000 rw-p 00000000 00:00 0 
+7fab27bf5000-7fab27bf8000 ---p 00000000 00:00 0 
+7fab27bf8000-7fab27cf6000 rw-p 00000000 00:00 0 
+7fab27cf6000-7fab27cf9000 ---p 00000000 00:00 0 
+7fab27cf9000-7fab27ff7000 rw-p 00000000 00:00 0 
+7fab28000000-7fab28021000 rw-p 00000000 00:00 0 
+7fab28021000-7fab2c000000 ---p 00000000 00:00 0 
+7fab2c000000-7fab2e314000 rw-p 00000000 00:00 0 
+7fab2e314000-7fab30000000 ---p 00000000 00:00 0 
+7fab30000000-7fab30021000 rw-p 00000000 00:00 0 
+7fab30021000-7fab34000000 ---p 00000000 00:00 0 
+7fab34000000-7fab34028000 rw-p 00000000 00:00 0 
+7fab34028000-7fab38000000 ---p 00000000 00:00 0 
+7fab38000000-7fab38072000 rw-p 00000000 00:00 0 
+7fab38072000-7fab3c000000 ---p 00000000 00:00 0 
+7fab3c000000-7fab3c025000 rw-p 00000000 00:00 0 
+7fab3c025000-7fab40000000 ---p 00000000 00:00 0 
+7fab40000000-7fab40032000 rw-p 00000000 00:00 0 
+7fab40032000-7fab44000000 ---p 00000000 00:00 0 
+7fab44000000-7fab44021000 rw-p 00000000 00:00 0 
+7fab44021000-7fab48000000 ---p 00000000 00:00 0 
+7fab48000000-7fab4802a000 rw-p 00000000 00:00 0 
+7fab4802a000-7fab4c000000 ---p 00000000 00:00 0 
+7fab4c000000-7fab4c021000 rw-p 00000000 00:00 0 
+7fab4c021000-7fab50000000 ---p 00000000 00:00 0 
+7fab5003d000-7fab500a6000 r--s 004ec000 00:23 27859701                   /home/aboriero/hibernate/orm_last/hibernate-orm/hibernate-core/target/libs/hibernate-core-5.1.0-SNAPSHOT.jar
+7fab500a6000-7fab502a6000 rw-p 00000000 00:00 0 
+7fab502a6000-7fab504a6000 rw-p 00000000 00:00 0 
+7fab504a6000-7fab506a6000 rw-p 00000000 00:00 0 
+7fab506a6000-7fab508a6000 rw-p 00000000 00:00 0 
+7fab508a6000-7fab50aa6000 rw-p 00000000 00:00 0 
+7fab50aa6000-7fab50ca6000 rw-p 00000000 00:00 0 
+7fab50ca6000-7fab50ea6000 rw-p 00000000 00:00 0 
+7fab50ea6000-7fab510a6000 rw-p 00000000 00:00 0 
+7fab510a6000-7fab512a6000 rw-p 00000000 00:00 0 
+7fab512a6000-7fab512a9000 ---p 00000000 00:00 0 
+7fab512a9000-7fab513a7000 rw-p 00000000 00:00 0 
+7fab513a7000-7fab513af000 r-xp 00000000 00:23 1072247                    /opt/jdk1.8.0_60/jre/lib/amd64/libmanagement.so
+7fab513af000-7fab515af000 ---p 00008000 00:23 1072247                    /opt/jdk1.8.0_60/jre/lib/amd64/libmanagement.so
+7fab515af000-7fab515b0000 rw-p 00008000 00:23 1072247                    /opt/jdk1.8.0_60/jre/lib/amd64/libmanagement.so
+7fab515b0000-7fab517b0000 rw-p 00000000 00:00 0 
+7fab517b0000-7fab519b0000 rw-p 00000000 00:00 0 
+7fab519f4000-7fab519f7000 ---p 00000000 00:00 0 
+7fab519f7000-7fab51af5000 rw-p 00000000 00:00 0 
+7fab51af5000-7fab51af8000 ---p 00000000 00:00 0 
+7fab51af8000-7fab51bf6000 rw-p 00000000 00:00 0 
+7fab51bf6000-7fab51bf9000 ---p 00000000 00:00 0 
+7fab51bf9000-7fab51cf7000 rw-p 00000000 00:00 0 
+7fab51cf7000-7fab51cfa000 ---p 00000000 00:00 0 
+7fab51cfa000-7fab51df8000 rw-p 00000000 00:00 0 
+7fab51df8000-7fab51dfb000 ---p 00000000 00:00 0 
+7fab51dfb000-7fab51ef9000 rw-p 00000000 00:00 0 
+7fab51ef9000-7fab51efc000 ---p 00000000 00:00 0 
+7fab51efc000-7fab51ffa000 rw-p 00000000 00:00 0 
+7fab51ffa000-7fab51ffd000 ---p 00000000 00:00 0 
+7fab51ffd000-7fab520fb000 rw-p 00000000 00:00 0 
+7fab520fb000-7fab520fe000 ---p 00000000 00:00 0 
+7fab520fe000-7fab521fc000 rw-p 00000000 00:00 0 
+7fab521fc000-7fab521ff000 ---p 00000000 00:00 0 
+7fab521ff000-7fab522fd000 rw-p 00000000 00:00 0 
+7fab522fd000-7fab52300000 ---p 00000000 00:00 0 
+7fab52300000-7fab523fe000 rw-p 00000000 00:00 0 
+7fab523fe000-7fab52401000 ---p 00000000 00:00 0 
+7fab52401000-7fab526ff000 rw-p 00000000 00:00 0 
+7fab526ff000-7fab52702000 ---p 00000000 00:00 0 
+7fab52702000-7fab52a00000 rw-p 00000000 00:00 0 
+7fab52a00000-7fab52c00000 rw-p 00000000 00:00 0 
+7fab52c00000-7fab52e00000 rw-p 00000000 00:00 0 
+7fab52e00000-7fab53000000 rw-p 00000000 00:00 0 
+7fab53000000-7fab53200000 rw-p 00000000 00:00 0 
+7fab53200000-7fab53400000 rw-p 00000000 00:00 0 
+7fab53400000-7fab53600000 rw-p 00000000 00:00 0 
+7fab53600000-7fab53800000 rw-p 00000000 00:00 0 
+7fab53800000-7fab53a00000 rw-p 00000000 00:00 0 
+7fab53a00000-7fab53c00000 rw-p 00000000 00:00 0 
+7fab53c00000-7fab53e00000 rw-p 00000000 00:00 0 
+7fab53e00000-7fab54000000 rw-p 00000000 00:00 0 
+7fab54000000-7fab54021000 rw-p 00000000 00:00 0 
+7fab54021000-7fab58000000 ---p 00000000 00:00 0 
+7fab58000000-7fab58021000 rw-p 00000000 00:00 0 
+7fab58021000-7fab5c000000 ---p 00000000 00:00 0 
+7fab5c000000-7fab5c021000 rw-p 00000000 00:00 0 
+7fab5c021000-7fab60000000 ---p 00000000 00:00 0 
+7fab60000000-7fab61daf000 rw-p 00000000 00:00 0 
+7fab61daf000-7fab64000000 ---p 00000000 00:00 0 
+7fab64000000-7fab64021000 rw-p 00000000 00:00 0 
+7fab64021000-7fab68000000 ---p 00000000 00:00 0 
+7fab68000000-7fab68021000 rw-p 00000000 00:00 0 
+7fab68021000-7fab6c000000 ---p 00000000 00:00 0 
+7fab6c000000-7fab6c021000 rw-p 00000000 00:00 0 
+7fab6c021000-7fab70000000 ---p 00000000 00:00 0 
+7fab70000000-7fab7006e000 rw-p 00000000 00:00 0 
+7fab7006e000-7fab74000000 ---p 00000000 00:00 0 
+7fab74000000-7fab76630000 rw-p 00000000 00:00 0 
+7fab76630000-7fab78000000 ---p 00000000 00:00 0 
+7fab78000000-7fab78021000 rw-p 00000000 00:00 0 
+7fab78021000-7fab7c000000 ---p 00000000 00:00 0 
+7fab7c000000-7fab7eab1000 rw-p 00000000 00:00 0 
+7fab7eab1000-7fab80000000 ---p 00000000 00:00 0 
+7fab80000000-7fab825a0000 rw-p 00000000 00:00 0 
+7fab825a0000-7fab84000000 ---p 00000000 00:00 0 
+7fab84000000-7fab84021000 rw-p 00000000 00:00 0 
+7fab84021000-7fab88000000 ---p 00000000 00:00 0 
+7fab88005000-7fab88009000 r-xp 00000000 00:00 0 
+7fab88024000-7fab88025000 r--s 00000000 00:23 17589                      /home/aboriero/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar
+7fab88025000-7fab88029000 r--s 0000e000 00:23 17578                      /home/aboriero/.gradle/caches/modules-2/files-2.1/javax.enterprise/cdi-api/1.1-PFD/9ec46d69b097daec421e757ce49c07c76a025e18/cdi-api-1.1-PFD.jar
+7fab88029000-7fab88087000 r--s 00592000 00:23 14189859                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/1.8.9/5396699e9d96c5c75d75ae95aa49acd5af048aac/groovy-all-1.8.9.jar
+7fab88087000-7fab88089000 r--s 0000d000 00:23 14189856                   /home/aboriero/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/47592e181b0bdbbeb63029e08c5e74f6803c4edd/jcommander-1.35.jar
+7fab88089000-7fab88092000 r--s 0009a000 00:23 14189846                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.asciidoctor/asciidoctorj/1.5.2/39d33f739ec1c46f6e908a725264eb74b23c9f99/asciidoctorj-1.5.2.jar
+7fab88092000-7fab88093000 r--p 00000000 00:23 4123307                    /usr/share/locale/en_GB/LC_MESSAGES/libc.mo
+7fab88093000-7fab88095000 r--s 00009000 00:23 14189849                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.asciidoctor/asciidoctorj-groovy-dsl/1.0.0.preview2/bc0d4db38efa60f34c99687f42789a3ab1458c50/asciidoctorj-groovy-dsl-1.0.0.preview2.jar
+7fab88095000-7fab88096000 r--s 00001000 00:23 17553                      /home/aboriero/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar
+7fab88096000-7fab88098000 r--s 00007000 00:23 17560                      /home/aboriero/.gradle/caches/modules-2/files-2.1/javax.el/el-api/2.2/42971279cc8ba864462580c7fc2199fd5715ee7f/el-api-2.2.jar
+7fab8809d000-7fab8809e000 r--s 00002000 00:23 18984                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jboss.pressgang/pressgang-highlight/3.0.0/becc3189299a2d3b6f93cbba9f5b03db9563673a/pressgang-highlight-3.0.0.jar
+7fab8809e000-7fab880a2000 r--s 00027000 00:23 12142396                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging-processor/2.0.0.Final/85845ed34f3351e7ac6de72fd043542f2b57e84d/jboss-logging-processor-2.0.0.Final.jar
+7fab880a6000-7fab880ad000 r--s 0005e000 00:23 7944700                    /home/aboriero/.gradle/caches/modules-2/files-2.1/com.sun.xsom/xsom/20140925/15e0cb6da0b3f362849646123f14678ec6976219/xsom-20140925.jar
+7fab880ad000-7fab880ae000 r--s 00001000 00:23 19162                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/8cb388fd3b4912373da7a18e199bb55aa52aa5c1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar
+7fab880ae000-7fab880b0000 r--s 00002000 00:23 12142393                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging-annotations/2.0.0.Final/f69fbbab3a164589e1ac09e603a3948de56e31b1/jboss-logging-annotations-2.0.0.Final.jar
+7fab880b2000-7fab880c3000 r--s 000ed000 00:23 7944688                    /home/aboriero/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-xjc/2.2.11/74525fd28b4b5c21ffe36e6bd4422736c1050025/jaxb-xjc-2.2.11.jar
+7fab880c3000-7fab880c4000 r--s 00003000 00:23 18998                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jboss.pressgang/pressgang-xslt-ns/3.0.0/d98c5f6ef7d69dd33a3ad45656f6640100e8fc82/pressgang-xslt-ns-3.0.0.jar
+7fab880c6000-7fab880c8000 r--s 00006000 00:23 7944730                    /home/aboriero/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/2b8019b6249bb05d81d3a3094e468753e2b21311/slf4j-api-1.7.7.jar
+7fab880cf000-7fab880d0000 rw-p 00000000 00:00 0 
+7fab880d0000-7fab880d5000 r--s 00034000 00:23 12142399                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jboss.jdeparser/jdeparser/2.0.0.Final/71ec53d2ad72d6cb4e89653d66f65b3f8170870d/jdeparser-2.0.0.Final.jar
+7fab880d5000-7fab880d8000 r--s 0001e000 00:23 7944691                    /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jvnet.jaxb2_commons/jaxb2-basics/0.9.3/dbf8115db317fb0f01a64371e2cd44a63157b114/jaxb2-basics-0.9.3.jar
+7fab880d8000-7fab880db000 r--s 00010000 00:23 12142350                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.0.Final/18a9e99c0150d7afa5042c53c01e7b3db0e55f0f/hibernate-commons-annotations-5.0.0.Final.jar
+7fab880db000-7fab880dc000 r--s 00003000 00:23 9472224                    /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1/aabab3165b8ea936b9360abbf448459c0d04a5a4/geronimo-jta_1.1_spec-1.1.1.jar
+7fab880dc000-7fab880de000 r--s 0000e000 00:23 26268819                   /home/aboriero/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.0/183407ff982e9375f1a1c4a51ed0a9307c598fc7/classmate-1.3.0.jar
+7fab880de000-7fab880e1000 r--s 0002b000 00:23 26268816                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.0.CR1/558d14decc2a335e1cf92431d073836717dcfd56/jandex-2.0.0.CR1.jar
+7fab880e1000-7fab880eb000 r--s 000ae000 00:23 26298931                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/a9cbcdfb7e9f86fbc74d3afae65f2248bfbf82a0/javassist-3.20.0-GA.jar
+7fab880eb000-7fab880f0000 r--s 00017000 00:23 18437                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar
+7fab880f0000-7fab880f2000 r--s 0000f000 00:23 12142347                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3616bb87707910296e2c195dc016287080bba5af/jboss-logging-3.3.0.Final.jar
+7fab880f2000-7fab880f7000 r--s 00068000 00:23 17139                      /home/aboriero/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar
+7fab880f7000-7fab880fa000 ---p 00000000 00:00 0 
+7fab880fa000-7fab88130000 rw-p 00000000 00:00 0 
+7fab88130000-7fab88136000 r--s 002f8000 00:23 1072344                    /opt/jdk1.8.0_60/jre/lib/charsets.jar
+7fab88136000-7fab88149000 r--s 00344000 00:23 1072208                    /opt/jdk1.8.0_60/jre/lib/resources.jar
+7fab88149000-7fab88161000 r--s 00115000 00:23 16330557                   /home/aboriero/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.9.1/1136d197e2755bbde296ceee217ec5fe2917477b/xercesImpl-2.9.1.jar
+7fab88161000-7fab88164000 r--s 00013000 00:23 16330554                   /home/aboriero/.gradle/caches/modules-2/files-2.1/net.sf.ezmorph/ezmorph/1.0.6/1e55d2a0253ea37745d33062852fd2c90027432/ezmorph-1.0.6.jar
+7fab88164000-7fab88168000 r--s 0003c000 00:23 17508                      /home/aboriero/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.4/16313e02a793435009f1e458fa4af5d879f6fb11/commons-lang-2.4.jar
+7fab88168000-7fab88176000 r--s 0007f000 00:23 7944742                    /home/aboriero/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.1/761ea405b9b37ced573d2df0d1e3a4e0f9edc668/commons-collections-3.2.1.jar
+7fab88176000-7fab8817b000 r--s 00034000 00:23 16330551                   /home/aboriero/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.0/c651d5103c649c12b20d53731643e5fffceb536/commons-beanutils-1.8.0.jar
+7fab8817b000-7fab88181000 r--s 00033000 00:23 16330548                   /home/aboriero/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar
+7fab88181000-7fab88183000 r--s 0000d000 00:23 17526                      /home/aboriero/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar
+7fab88183000-7fab88189000 r--s 00031000 00:23 16330545                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.2.1/2d503272bf0a8b5f92d64db78b4ba9abbaccc6fd/httpcore-4.2.1.jar
+7fab88189000-7fab8818b000 r--s 00013000 00:23 16330542                   /home/aboriero/.gradle/caches/modules-2/files-2.1/xml-resolver/xml-resolver/1.2/3d0f97750b3a03e0971831566067754ba4bfd68c/xml-resolver-1.2.jar
+7fab8818b000-7fab8818e000 r--s 0001c000 00:23 16330539                   /home/aboriero/.gradle/caches/modules-2/files-2.1/net.sourceforge.nekohtml/nekohtml/1.9.16/61e35204e5a8fdb864152f84e2e3b33ab56f50ab/nekohtml-1.9.16.jar
+7fab8818e000-7fab88192000 r--s 00022000 00:23 16330536                   /home/aboriero/.gradle/caches/modules-2/files-2.1/net.sf.json-lib/json-lib/2.3/f35340c0a0380141f62c72b76c8fb4bfa638d8c1/json-lib-2.3-jdk15.jar
+7fab88192000-7fab8819c000 r--s 0005f000 00:23 16330533                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.2.1/b69bd03af60bf487b3ae1209a644ecac587bf6fc/httpclient-4.2.1.jar
+7fab8819c000-7fab8819f000 r--s 00026000 00:23 16330530                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy.modules.http-builder/http-builder/0.7.2/323092cd786480311c1cf693770f9e6fc20a8bef/http-builder-0.7.2.jar
+7fab8819f000-7fab881a3000 r--s 00025000 00:23 16330527                   /home/aboriero/.gradle/caches/modules-2/files-2.1/com.jfrog.bintray.gradle/gradle-bintray-plugin/1.3.1/12a572adeff745e7a320486f4345fad05fa23555/gradle-bintray-plugin-1.3.1.jar
+7fab881a3000-7fab883a3000 rw-p 00000000 00:00 0 
+7fab883a3000-7fab885a3000 rw-p 00000000 00:00 0 
+7fab885a3000-7fab885a8000 r--s 00016000 00:23 3901951                    /home/aboriero/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/2.0.2/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-2.0.2.jar
+7fab885a8000-7fab885b0000 r--s 00074000 00:23 18106                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-js/1.7/688eb1bf13b7a54491fcb3405068fc5092589884/batik-js-1.7.jar
+7fab885b0000-7fab885b5000 r--s 00030000 00:23 18126                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-svggen/1.7/baa58d0f5bfd2a28142e222cee126eb71bd0a938/batik-svggen-1.7.jar
+7fab885b5000-7fab885b6000 r--s 00007000 00:23 18143                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-xml/1.7/17e3da8bd9d4a131350a7835f5cc0d93ba199c89/batik-xml-1.7.jar
+7fab885b6000-7fab885b8000 r--s 0000d000 00:23 18118                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-script/1.7/4ea7906724bfefc1fca3e5b28229a458523e1fbf/batik-script-1.7.jar
+7fab885b8000-7fab885bd000 r--s 00010000 00:23 19782                      /home/aboriero/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis-ext/1.3.04/41a8b86b358e87f3f13cf46069721719105aff66/xml-apis-ext-1.3.04.jar
+7fab885bd000-7fab885c0000 r--s 0001d000 00:23 18137                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-util/1.7/5c4dd0dd9a86a2fba2c6ea26fb62b32b21b2a61e/batik-util-1.7.jar
+7fab885c0000-7fab885c2000 r--s 00010000 00:23 18114                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-parser/1.7/5d756cc4f6bf891793e6c7590773859c33a8609f/batik-parser-1.7.jar
+7fab885c2000-7fab885c6000 r--s 00027000 00:23 18086                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-dom/1.7/710d559bd1df52581b57b75a99ed5fd2e2918bb7/batik-dom-1.7.jar
+7fab885c6000-7fab885cd000 r--s 00045000 00:23 18082                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-css/1.7/e6bb5c85753331534593f33fb9236acb41a0ab79/batik-css-1.7.jar
+7fab885cd000-7fab885d0000 r--s 00015000 00:23 18055                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-anim/1.7/a45dd2ff8e4ecd56a4fc64dc668b53bee90bf601/batik-anim-1.7.jar
+7fab885d0000-7fab885ee000 r--s 0027d000 00:23 19750                      /home/aboriero/.gradle/caches/modules-2/files-2.1/xalan/xalan/2.7.0/a33c0097f1c70b20fa7ded220ea317eb3500515e/xalan-2.7.0.jar
+7fab885ee000-7fab885f1000 r--s 00012000 00:23 17499                      /home/aboriero/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/1.3.1/b90b6ac57cf27a2858eaa490d02ba7945d18ca7b/commons-io-1.3.1.jar
+7fab885f1000-7fab885f3000 r--s 00008000 00:23 17524                      /home/aboriero/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.0.4/f029a2aefe2b3e1517573c580f948caac31b1056/commons-logging-1.0.4.jar
+7fab885f3000-7fab885f4000 r--s 00002000 00:23 18091                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-ext/1.7/4784302b44a0336166fef6153a5e3d73e861aecc/batik-ext-1.7.jar
+7fab885f4000-7fab885f6000 r--s 0000f000 00:23 18094                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-extension/1.7/8e810d9ce0499beca541e3b1a144557cf06f8b19/batik-extension-1.7.jar
+7fab885f6000-7fab885f9000 r--s 0001b000 00:23 18132                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-transcoder/1.7/aa2eb6300cb50bbb9dbf52daf7d625aa0df1d930/batik-transcoder-1.7.jar
+7fab885f9000-7fab885fd000 r--s 00038000 00:23 18101                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-gvt/1.7/3d315e60d72c761c52946b4acaa4b86239ef938/batik-gvt-1.7.jar
+7fab885fd000-7fab88605000 r--s 0005b000 00:23 18072                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-awt-util/1.7/67605a29d49bf33f3c1d7832f490b0a007e7a6e2/batik-awt-util-1.7.jar
+7fab88605000-7fab8860f000 r--s 0007f000 00:23 18074                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-bridge/1.7/8e0cde3830e0f17704cd392b0a09b13944987a51/batik-bridge-1.7.jar
+7fab8860f000-7fab8861c000 r--s 00086000 00:23 18123                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-svg-dom/1.7/5b3b1fea480fabbd3e0c44540af25b9fda0587ae/batik-svg-dom-1.7.jar
+7fab8861c000-7fab8861d000 r--s 00002000 00:23 17765                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant-launcher/1.7.0/e7e30789211e074aa70ef3eaea59bd5b22a7fa7a/ant-launcher-1.7.0.jar
+7fab8861d000-7fab8861e000 r--s 00658000 00:23 17758                      /home/aboriero/.gradle/caches/modules-2/files-2.1/net.sf.offo/fop-hyph/2.0/e7358fccc5efb8521f8044ede35707e922ea7cc8/fop-hyph-2.0.jar
+7fab8861e000-7fab88621000 r--s 00023000 00:23 17643                      /home/aboriero/.gradle/caches/modules-2/files-2.1/jdom/jdom/1.0/a2ac1cd690ab4c80defe7f9bce14d35934c35cec/jdom-1.0.jar
+7fab88621000-7fab88622000 r--s 0000a000 00:23 17702                      /home/aboriero/.gradle/caches/modules-2/files-2.1/net.sf.docbook/docbook-xsl-saxon/1.0.0/32f506d5d18d814536b64f41f01f59fd7acf1b77/docbook-xsl-saxon-1.0.0.jar
+7fab88622000-7fab8862c000 r--s 00081000 00:23 18162                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/xmlgraphics-commons/1.4/52a051c7202449347ab3d717987b5fc2e2a52143/xmlgraphics-commons-1.4.jar
+7fab8862c000-7fab8862d000 r--s 00007000 00:23 17712                      /home/aboriero/.gradle/caches/modules-2/files-2.1/net.sf.docbook/docbook-xsl-xalan/1.0.0/f74de735210b5da7f24043ef78bcc1cdbf5ed9d8/docbook-xsl-xalan-1.0.0.jar
+7fab8862d000-7fab8864e000 r--s 003e7000 00:23 17717                      /home/aboriero/.gradle/caches/modules-2/files-2.1/net.sf.docbook/docbook-xsl/1.76.0/20890b1b4af4a9f9064a6eaf26e7b7dc51ac195/docbook-xsl-1.76.0-ns-resources.zip
+7fab8864e000-7fab8867d000 r--s 002c1000 00:23 18153                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/fop/1.0/763be6b7d2556cd4486bd306408cc2490e57668d/fop-1.0.jar
+7fab8867d000-7fab88681000 r--s 00033000 00:23 18338                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/2.0.3/df24cc90fc59f7200f3a1d15c80febb736db9e23/plexus-utils-2.0.3.jar
+7fab88681000-7fab88683000 r--s 00005000 00:23 19511                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.1/6f3b8a24bf970f17289b234284c94f43eb42f0e4/slf4j-api-1.6.1.jar
+7fab88683000-7fab88685000 r--s 0000d000 00:23 17803                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.avalon.framework/avalon-framework-impl/4.3.1/2d5f5a07fd14513ce6d7a7bfaff69419c26dbd0b/avalon-framework-impl-4.3.1.jar
+7fab88685000-7fab88687000 r--s 0000d000 00:23 19811                      /home/aboriero/.gradle/caches/modules-2/files-2.1/xml-resolver/xml-resolver/1.1/a6dc742fee6b739bae3f58d79cde7b5c725fd43e/xml-resolver-1.1.jar
+7fab88687000-7fab8868a000 r--s 00006000 00:23 17795                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.avalon.framework/avalon-framework-api/4.3.1/2dacadeb49bc14420990b1f28897d46f96e2181d/avalon-framework-api-4.3.1.jar
+7fab8868a000-7fab8868c000 r--s 0000b000 00:23 17811                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-exec/1.1/7dfdf16fade726000564386825ed6d911a44ba1/commons-exec-1.1.jar
+7fab8868c000-7fab88696000 r--s 00090000 00:23 19736                      /home/aboriero/.gradle/caches/modules-2/files-2.1/saxon/saxon/6.5.3/2c4d29d52d0ae2335f3670b94e0a7412f446e948/saxon-6.5.3.jar
+7fab88696000-7fab886ad000 r--s 00110000 00:23 19774                      /home/aboriero/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.8.0/cfd3ebe2f8034e660344f9108c3e2daf78c29cc3/xercesImpl-2.8.0.jar
+7fab886ad000-7fab886af000 r--s 00001000 00:23 75755                      /home/aboriero/.gradle/caches/modules-2/files-2.1/net.socialchange.doctype/doctype-changer/1.1/a5302aedf8619963c9c0e6e67d550edacebf3aea/doctype-changer-1.1.jar
+7fab886af000-7fab886c2000 r--s 00128000 00:23 17791                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant/1.7.0/9746af1a485e50cf18dcb232489032a847067066/ant-1.7.0.jar
+7fab886c2000-7fab886c5000 r--s 00013000 00:23 18902                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jboss.jdocbook/jdocbook-core/1.1.0/d10dc112b1a862cc6d727b999bfe0ccf9b2ea776/jdocbook-core-1.1.0.jar
+7fab886c5000-7fab886c7000 r--s 00010000 00:23 13906139                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.asciidoctor/asciidoctor-gradle-plugin/1.5.2/c0070557dd82b199d3755098fb48b8b9a2326e24/asciidoctor-gradle-plugin-1.5.2.jar
+7fab886c7000-7fab886c9000 r--s 0001d000 00:23 18899                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.jboss.jdocbook/gradle-jdocbook/1.2.2/bc6bd710d74402c0c426690778cbd7c190d79008/gradle-jdocbook-1.2.2.jar
+7fab886c9000-7fab888c9000 rw-p 00000000 00:00 0 
+7fab888c9000-7fab88ac9000 rw-p 00000000 00:00 0 
+7fab88ac9000-7fab88cc9000 rw-p 00000000 00:00 0 
+7fab88cc9000-7fab88cce000 r--s 00039000 00:23 18331                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/1.5.5/7bd031358c3d6d3a7aea2e4de03c0d34675c5d9d/plexus-utils-1.5.5.jar
+7fab88cce000-7fab88ccf000 r--s 0000a000 00:23 17514                      /home/aboriero/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging-api/1.1/7d4cf5231d46c8524f9b9ed75bb2d1c69ab93322/commons-logging-api-1.1.jar
+7fab88ccf000-7fab88cd6000 r--s 00051000 00:23 17673                      /home/aboriero/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.12/57b8740427ee6d7b0b60792751356cad17dc0d9/log4j-1.2.12.jar
+7fab88cd6000-7fab88cd8000 r--s 00002000 00:23 17767                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant-launcher/1.8.2/6a5466384e7e2086b13d3d281dadaa059b0d0923/ant-launcher-1.8.2.jar
+7fab88cd8000-7fab88cda000 r--s 00002000 00:23 19626                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-cipher/1.4/50ade46f23bb38cd984b4ec560c46223432aac38/plexus-cipher-1.4.jar
+7fab88cda000-7fab88cf1000 r-xp 00000000 00:23 4123381                    /usr/lib64/libresolv-2.21.so
+7fab88cf1000-7fab88ef1000 ---p 00017000 00:23 4123381                    /usr/lib64/libresolv-2.21.so
+7fab88ef1000-7fab88ef2000 r--p 00017000 00:23 4123381                    /usr/lib64/libresolv-2.21.so
+7fab88ef2000-7fab88ef3000 rw-p 00018000 00:23 4123381                    /usr/lib64/libresolv-2.21.so
+7fab88ef3000-7fab88ef5000 rw-p 00000000 00:00 0 
+7fab88ef5000-7fab88efa000 r-xp 00000000 00:23 4123369                    /usr/lib64/libnss_dns-2.21.so
+7fab88efa000-7fab890fa000 ---p 00005000 00:23 4123369                    /usr/lib64/libnss_dns-2.21.so
+7fab890fa000-7fab890fb000 r--p 00005000 00:23 4123369                    /usr/lib64/libnss_dns-2.21.so
+7fab890fb000-7fab890fc000 rw-p 00006000 00:23 4123369                    /usr/lib64/libnss_dns-2.21.so
+7fab890fc000-7fab890fe000 r-xp 00000000 00:23 1692718                    /usr/lib64/libnss_mdns4_minimal.so.2
+7fab890fe000-7fab892fd000 ---p 00002000 00:23 1692718                    /usr/lib64/libnss_mdns4_minimal.so.2
+7fab892fd000-7fab892fe000 r--p 00001000 00:23 1692718                    /usr/lib64/libnss_mdns4_minimal.so.2
+7fab892fe000-7fab892ff000 rw-p 00002000 00:23 1692718                    /usr/lib64/libnss_mdns4_minimal.so.2
+7fab892ff000-7fab894ff000 rw-p 00000000 00:00 0 
+7fab894ff000-7fab89531000 r-xp 00000000 00:23 1072269                    /opt/jdk1.8.0_60/jre/lib/amd64/libsunec.so
+7fab89531000-7fab89730000 ---p 00032000 00:23 1072269                    /opt/jdk1.8.0_60/jre/lib/amd64/libsunec.so
+7fab89730000-7fab89736000 rw-p 00031000 00:23 1072269                    /opt/jdk1.8.0_60/jre/lib/amd64/libsunec.so
+7fab89736000-7fab89946000 rw-p 00000000 00:00 0 
+7fab89946000-7fab90000000 r--p 00000000 00:23 4123343                    /usr/lib/locale/locale-archive
+7fab90000000-7fab90021000 rw-p 00000000 00:00 0 
+7fab90021000-7fab94000000 ---p 00000000 00:00 0 
+7fab94000000-7fab94021000 rw-p 00000000 00:00 0 
+7fab94021000-7fab98000000 ---p 00000000 00:00 0 
+7fab98000000-7fab983a2000 rw-p 00000000 00:00 0 
+7fab983a2000-7fab9c000000 ---p 00000000 00:00 0 
+7fab9c000000-7fab9c028000 rw-p 00000000 00:00 0 
+7fab9c028000-7faba0000000 ---p 00000000 00:00 0 
+7faba0000000-7faba0005000 r--s 00016000 00:23 19789                      /home/aboriero/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.0.b2/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-1.0.b2.jar
+7faba0005000-7faba0008000 r--s 0001b000 00:23 17653                      /home/aboriero/.gradle/caches/modules-2/files-2.1/junit/junit/3.8.2/7e4cde26b53a9a0e3fe5b00d1dbbc7cc1d46060/junit-3.8.2.jar
+7faba0008000-7faba0014000 r--s 0006f000 00:23 17336                      /home/aboriero/.gradle/caches/modules-2/files-2.1/com.google.code.google-collections/google-collect/snapshot-20080530/a22f9b3a80ba9696ed120735f8b6c3c99d942bcc/google-collect-snapshot-20080530.jar
+7faba0014000-7faba0018000 r--s 0001d000 00:23 18041                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.xbean/xbean-reflect/3.4/26fd55dceb037f4789b399b22874d74f4d2db66f/xbean-reflect-3.4.jar
+7faba0018000-7faba001a000 r--s 00009000 00:23 18252                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-classworlds/1.4/b2cc7a1e5579608055cef3a85bc0ef793f4b91dc/plexus-classworlds-1.4.jar
+7faba001a000-7faba0024000 r--s 000a5000 00:23 18541                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.1-GA/d9a09f7732226af26bf99f19e2cffe0ae219db5b/javassist-3.18.1-GA.jar
+7faba0024000-7faba0042000 r--s 001bb000 00:23 17793                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant/1.8.2/fc33bf7cd8c5309dd7b81228e8626515ee42efd9/ant-1.8.2.jar
+7faba0042000-7faba0043000 r--s 00006000 00:23 19649                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-sec-dispatcher/1.3/dedc02034fb8fcd7615d66593228cb71709134b4/plexus-sec-dispatcher-1.3.jar
+7faba0043000-7faba0048000 r--s 00048000 00:23 17531                      /home/aboriero/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar
+7faba0048000-7faba004f000 r--s 0002d000 00:23 18298                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-container-default/1.0.0/b93713c4c97be9ce0ad8af1e51cc7d2928e4696/plexus-container-default-1.0.0.jar
+7faba004f000-7faba0052000 r--s 00015000 00:23 12266809                   /home/aboriero/.gradle/caches/modules-2/files-2.1/com.github.lburgazzoli/lb-karaf-features-gen/1.0.0-SNAPSHOT/843a50c5b3ecab04f284afd0ded0dda6440f537f/lb-karaf-features-gen-1.0.0-SNAPSHOT.jar
+7faba0052000-7faba0053000 r--s 00006000 00:23 7944110                    /home/aboriero/.gradle/caches/modules-2/files-2.1/org.hibernate.build.gradle/gradle-xjc-plugin/1.0.2.Final/1192d13f40c6b95b1af980c875ec088928c9f5b9/gradle-xjc-plugin-1.0.2.Final.jar
+7faba0053000-7faba0054000 r--s 00002000 00:23 18419                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.hibernate.build.gradle/version-injection-plugin/1.0.0/60ad07418f36e09d91cbeaaa9740498e4fbdb4d6/version-injection-plugin-1.0.0.jar
+7faba0054000-7faba0056000 r--s 00004000 00:23 14053818                   /home/aboriero/.gradle/caches/modules-2/files-2.1/org.hibernate.build.gradle/hibernate-matrix-testing/2.0.0-SNAPSHOT/188fe5b610a56b98b43c9154a241de73f5dbcbe3/hibernate-matrix-testing-2.0.0-SNAPSHOT.jar
+7faba0056000-7faba0058000 r--s 00004000 00:23 18398                      /home/aboriero/.gradle/caches/modules-2/files-2.1/org.hibernate.build.gradle/gradle-maven-publish-auth/2.0.1/1dafd7ba42afb8c6138fe1ee1c6209a8834413e4/gradle-maven-publish-auth-2.0.1.jar
+7faba0058000-7faba0059000 r--s 00009000 00:23 1072313                    /opt/jdk1.8.0_60/jre/lib/ext/sunec.jar
+7faba0059000-7faba005c000 r--s 0001a000 00:23 1072345                    /opt/jdk1.8.0_60/jre/lib/jce.jar
+7faba005c000-7faba0061000 r--s 00036000 00:23 6662745                    /home/aboriero/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-all/5.0.3/4333508b8dd8ee72aa4e39afa713b3a74579b773/asm-all-5.0.3.jar
+7faba0061000-7faba0062000 r--s 00007000 00:23 7944072                    /home/aboriero/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer/1.13/782b2119fa23df9127666a2583e6ea7d638d3d9b/animal-sniffer-1.13.jar
+7faba0062000-7faba0063000 r--s 00006000 00:23 7944069                    /home/aboriero/.gradle/caches/modules-2/files-2.1/org.hibernate.build.gradle/gradle-animalSniffer-plugin/1.0.1.Final/84e41d24b7b16abe40f93b91266a162ea54bb691/gradle-animalSniffer-plugin-1.0.1.Final.jar
+7faba0063000-7faba0263000 rw-p 00000000 00:00 0 
+7faba0263000-7faba0463000 rw-p 00000000 00:00 0 
+7faba0463000-7faba0466000 ---p 00000000 00:00 0 
+7faba0466000-7faba049c000 rw-p 00000000 00:00 0 
+7faba049c000-7faba049d000 r--p 00000000 00:00 0 
+7faba049d000-7faba069d000 rw-p 00000000 00:00 0 
+7faba069d000-7faba089d000 rw-p 00000000 00:00 0 
+7faba089d000-7faba0a9d000 rw-p 00000000 00:00 0 
+7faba0a9d000-7faba0aa0000 ---p 00000000 00:00 0 
+7faba0aa0000-7faba0d9e000 rw-p 00000000 00:00 0                          [stack:6492]
+7faba0d9e000-7faba0f9e000 rw-p 00000000 00:00 0 
+7faba0f9e000-7faba1017000 r--s 010e2000 00:23 1072565                    /opt/jdk1.8.0_60/lib/tools.jar
+7faba1017000-7faba101a000 ---p 00000000 00:00 0 
+7faba101a000-7faba1118000 rw-p 00000000 00:00 0                          [stack:26664]
+7faba1118000-7faba111f000 r--s 00000000 00:23 4123668                    /usr/lib64/gconv/gconv-modules.cache
+7faba111f000-7faba131f000 rw-p 00000000 00:00 0 
+7faba131f000-7faba1322000 ---p 00000000 00:00 0 
+7faba1322000-7faba1420000 rw-p 00000000 00:00 0                          [stack:26663]
+7faba1420000-7faba1423000 ---p 00000000 00:00 0 
+7faba1423000-7faba1521000 rw-p 00000000 00:00 0                          [stack:26662]
+7faba1521000-7faba1524000 ---p 00000000 00:00 0 
+7faba1524000-7faba1622000 rw-p 00000000 00:00 0                          [stack:26661]
+7faba1622000-7faba1625000 ---p 00000000 00:00 0 
+7faba1625000-7faba1723000 rw-p 00000000 00:00 0                          [stack:26660]
+7faba1723000-7faba1726000 ---p 00000000 00:00 0 
+7faba1726000-7faba1824000 rw-p 00000000 00:00 0                          [stack:6484]
+7faba1824000-7faba1829000 r--s 00094000 00:23 1072212                    /opt/jdk1.8.0_60/jre/lib/jsse.jar
+7faba1829000-7faba182b000 r--s 00005000 00:23 26013724                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-tooling-api-builders-2.7.jar
+7faba182b000-7faba183b000 r--s 00088000 00:23 26013756                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/joda-time-2.8.2.jar
+7faba183b000-7faba184c000 r--s 000cf000 00:23 26013755                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jackson-databind-2.3.2.jar
+7faba184c000-7faba184e000 r--s 00007000 00:23 26013754                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jackson-annotations-2.3.2.jar
+7faba184e000-7faba1851000 r--s 0002e000 00:23 26013753                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jackson-core-2.3.2.jar
+7faba1851000-7faba185c000 r--s 0006b000 00:23 26013752                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/aws-java-sdk-core-1.9.19.jar
+7faba185c000-7faba1862000 r--s 00036000 00:23 26013751                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/aws-java-sdk-kms-1.9.19.jar
+7faba1862000-7faba186d000 r--s 00079000 00:23 26013750                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/aws-java-sdk-s3-1.9.19.jar
+7faba186d000-7faba186e000 r--s 00003000 00:23 26013723                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-resources-s3-2.7.jar
+7faba186e000-7faba186f000 r--s 00004000 00:23 26013722                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-resources-sftp-2.7.jar
+7faba186f000-7faba1870000 r--s 00001000 00:23 26013719                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-plugin-development-2.7.jar
+7faba1870000-7faba1872000 r--s 00005000 00:23 26013718                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-testing-native-2.7.jar
+7faba1872000-7faba1876000 r--s 00036000 00:23 26013717                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-ide-native-2.7.jar
+7faba1876000-7faba187c000 r--s 00019000 00:23 26013716                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-language-native-2.7.jar
+7faba187c000-7faba1882000 r--s 00027000 00:23 26013715                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-platform-play-2.7.jar
+7faba1882000-7faba188e000 r--s 00054000 00:23 26013714                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-platform-native-2.7.jar
+7faba188e000-7faba1891000 r--s 00008000 00:23 26013713                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-language-scala-2.7.jar
+7faba1891000-7faba1893000 r--s 00009000 00:23 26013712                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-language-groovy-2.7.jar
+7faba1893000-7faba1899000 r--s 00023000 00:23 26013711                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-language-java-2.7.jar
+7faba1899000-7faba189b000 r--s 00008000 00:23 26013710                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-language-jvm-2.7.jar
+7faba189b000-7faba189e000 r--s 0000d000 00:23 26013709                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-platform-jvm-2.7.jar
+7faba189e000-7faba18a6000 r--s 0002b000 00:23 26013708                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-platform-base-2.7.jar
+7faba18a6000-7faba18aa000 r--s 00025000 00:23 26013707                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-build-init-2.7.jar
+7faba18aa000-7faba18ad000 r--s 0001c000 00:23 26013706                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-jacoco-2.7.jar
+7faba18ad000-7faba18b0000 r--s 0000e000 00:23 26013705                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-ivy-2.7.jar
+7faba18b0000-7faba18b2000 r--s 00002000 00:23 26013704                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-publish-2.7.jar
+7faba18b2000-7faba18b4000 r--s 00005000 00:23 26013746                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jatl-0.2.2.jar
+7faba18b4000-7faba18b6000 r--s 0000f000 00:23 26013703                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-reporting-2.7.jar
+7faba18b6000-7faba18bb000 r--s 00037000 00:23 26013702                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-diagnostics-2.7.jar
+7faba18bb000-7faba18c2000 r--s 00094000 00:23 26013701                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-build-comparison-2.7.jar
+7faba18c2000-7faba18c9000 r--s 00035000 00:23 26013745                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/simple-4.1.21.jar
+7faba18c9000-7faba18d5000 r--s 00100000 00:23 26013743                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/rhino-1.7R3.jar
+7faba18d5000-7faba18d9000 r--s 0001f000 00:23 26013700                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-javascript-2.7.jar
+7faba18d9000-7faba18db000 r--s 0000e000 00:23 26013699                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-ear-2.7.jar
+7faba18db000-7faba18e2000 r--s 00038000 00:23 26013742                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/bcpg-jdk15on-1.51.jar
+7faba18e2000-7faba18e4000 r--s 0001d000 00:23 26013698                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-signing-2.7.jar
+7faba18e4000-7faba18e5000 r--s 00002000 00:23 26013741                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/sonar-batch-bootstrapper-2.9.jar
+7faba18e5000-7faba18e8000 r--s 00019000 00:23 26013697                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-sonar-2.7.jar
+7faba18e8000-7faba18ea000 r--s 00013000 00:23 26013696                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-scala-2.7.jar
+7faba18ea000-7faba18eb000 r--s 0000e000 00:23 26013695                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-announce-2.7.jar
+7faba18eb000-7faba18f8000 r--s 000bd000 00:23 26013694                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-ide-2.7.jar
+7faba18f8000-7faba18fb000 r--s 0000c000 00:23 26013740                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/pmaven-groovy-0.8-20100325.jar
+7faba18fb000-7faba18fc000 r--s 00004000 00:23 26013739                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/pmaven-common-0.8-20100325.jar
+7faba18fc000-7faba1902000 r--s 00022000 00:23 26013693                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-maven-2.7.jar
+7faba1902000-7faba191a000 r--s 0013b000 00:23 26013737                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/bndlib-2.1.0.jar
+7faba191a000-7faba191c000 r--s 00004000 00:23 26013692                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-osgi-2.7.jar
+7faba191c000-7faba191e000 r--s 00008000 00:23 26013691                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-antlr-2.7.jar
+7faba191e000-7faba1921000 r--s 0001e000 00:23 26013765                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jsp-api-2.1-6.1.14.jar
+7faba1921000-7faba1944000 r--s 00344000 00:23 26013764                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/core-3.1.1.jar
+7faba1944000-7faba1945000 r--s 00006000 00:23 26013763                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jetty-naming-6.1.25.jar
+7faba1945000-7faba1946000 r--s 00002000 00:23 26013736                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/geronimo-annotation_1.0_spec-1.0.jar
+7faba1946000-7faba1948000 r--s 00002000 00:23 26013735                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jetty-annotations-6.1.25.jar
+7faba1948000-7faba1959000 r--s 000ea000 00:23 26013734                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jsp-2.1-6.1.14.jar
+7faba1959000-7faba195b000 r--s 0000d000 00:23 26013733                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jetty-plus-6.1.25.jar
+7faba195b000-7faba195d000 r--s 0001f000 00:23 26013732                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/servlet-api-2.5-20081211.jar
+7faba195d000-7faba1961000 r--s 00028000 00:23 26013731                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jetty-util-6.1.25.jar
+7faba1961000-7faba1968000 r--s 0007d000 00:23 26013730                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jetty-6.1.25.jar
+7faba1968000-7faba196a000 r--s 00009000 00:23 26013690                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-jetty-2.7.jar
+7faba196a000-7faba1970000 r--s 00041000 00:23 26013689                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-code-quality-2.7.jar
+7faba1970000-7faba1972000 r--s 00009000 00:23 26013795                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/hamcrest-core-1.3.jar
+7faba1972000-7faba1978000 r--s 00033000 00:23 26013762                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/snakeyaml-1.6.jar
+7faba1978000-7faba197a000 r--s 00006000 00:23 26013761                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jcommander-1.12.jar
+7faba197a000-7faba197f000 r--s 00040000 00:23 26013760                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/bsh-2.0b4.jar
+7faba197f000-7faba1981000 r--s 00009000 00:23 26013729                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/commons-cli-1.2.jar
+7faba1981000-7faba198a000 r--s 00089000 00:23 26013728                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/testng-6.3.1.jar
+7faba198a000-7faba1992000 r--s 00045000 00:23 26013727                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/junit-4.12.jar
+7faba1992000-7faba199e000 r--s 0007b000 00:23 26013688                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-plugins-2.7.jar
+7faba199e000-7faba19b6000 r--s 00115000 00:23 26013793                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/xercesImpl-2.9.1.jar
+7faba19b6000-7faba19be000 r--s 00028000 00:23 26013794                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/xml-apis-1.3.04.jar
+7faba19be000-7faba19c4000 r--s 0005b000 00:23 26013792                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jcifs-1.3.17.jar
+7faba19c4000-7faba19ca000 r--s 00031000 00:23 26013791                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/httpcore-4.2.2.jar
+7faba19ca000-7faba19d0000 r--s 00033000 00:23 26013790                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/commons-codec-1.6.jar
+7faba19d0000-7faba19d3000 r--s 0001c000 00:23 26013748                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/nekohtml-1.9.14.jar
+7faba19d3000-7faba19dc000 r--s 00060000 00:23 26013747                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/httpclient-4.2.2.jar
+7faba19dc000-7faba19de000 r--s 00009000 00:23 26013721                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-resources-http-2.7.jar
+7faba19de000-7faba19e1000 r--s 00010000 00:23 26013720                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-plugin-use-2.7.jar
+7faba19e1000-7faba19e2000 r--s 00007000 00:23 26013789                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/wagon-http-shared4-2.4.jar
+7faba19e2000-7faba19e6000 r--s 00033000 00:23 26013788                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/plexus-utils-2.0.6.jar
+7faba19e6000-7faba19ea000 r--s 00021000 00:23 26013787                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/maven-model-builder-3.0.4.jar
+7faba19ea000-7faba19eb000 r--s 00002000 00:23 26013786                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/wagon-file-2.4.jar
+7faba19eb000-7faba19ed000 r--s 00002000 00:23 26013785                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/plexus-cipher-1.7.jar
+7faba19ed000-7faba19f0000 r--s 00013000 00:23 26013784                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/aether-api-1.13.1.jar
+7faba19f0000-7faba19f2000 r--s 0000a000 00:23 26013783                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/maven-settings-3.0.4.jar
+7faba19f2000-7faba19f4000 r--s 0000d000 00:23 26013782                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/plexus-interpolation-1.14.jar
+7faba19f4000-7faba19f6000 r--s 0000b000 00:23 26013781                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/maven-artifact-3.0.4.jar
+7faba19f6000-7faba19fd000 r--s 0002e000 00:23 26013780                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/plexus-container-default-1.5.5.jar
+7faba19fd000-7faba19ff000 r--s 0000b000 00:23 26013779                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/maven-plugin-api-3.0.4.jar
+7faba19ff000-7faba1a01000 r--s 00000000 00:23 26013796                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/plexus-component-annotations-1.5.5.jar
+7faba1a01000-7faba1a07000 r--s 0003f000 00:23 26013778                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/maven-compat-3.0.4.jar
+7faba1a07000-7faba1a0a000 r--s 00008000 00:23 26013777                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/maven-settings-builder-3.0.4.jar
+7faba1a0a000-7faba1a0b000 r--s 00002000 00:23 26013776                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/wagon-http-2.4.jar
+7faba1a0b000-7faba1a0d000 r--s 00026000 00:23 26013775                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/maven-model-3.0.4.jar
+7faba1a0d000-7faba1a0f000 r--s 00006000 00:23 26013774                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/aether-connector-wagon-1.13.1.jar
+7faba1a0f000-7faba1a11000 r--s 0000a000 00:23 26013773                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/plexus-classworlds-2.4.jar
+7faba1a11000-7faba1a13000 r--s 00006000 00:23 26013772                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/maven-repository-metadata-3.0.4.jar
+7faba1a13000-7faba1a15000 r--s 0000c000 00:23 26013771                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/maven-aether-provider-3.0.4.jar
+7faba1a15000-7faba1a17000 r--s 0000b000 00:23 26013770                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/wagon-provider-api-2.4.jar
+7faba1a17000-7faba1a18000 r--s 00003000 00:23 26013769                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/aether-spi-1.13.1.jar
+7faba1a18000-7faba1a1c000 r--s 0001c000 00:23 26013768                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/aether-util-1.13.1.jar
+7faba1a1c000-7faba1a1f000 r--s 0001d000 00:23 26013767                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/aether-impl-1.13.1.jar
+7faba1a1f000-7faba1a23000 r--s 0003d000 00:23 26013749                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/jsch-0.1.51.jar
+7faba1a23000-7faba1a63000 r--s 00277000 00:23 26013759                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/bcprov-jdk15on-1.51.jar
+7faba1a63000-7faba1a67000 r--s 0001d000 00:23 26013758                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/xbean-reflect-3.4.jar
+7faba1a67000-7faba1a7d000 r-xp 00000000 00:23 1543467                    /usr/lib64/libgcc_s-5.1.1-20150618.so.1
+7faba1a7d000-7faba1c7c000 ---p 00016000 00:23 1543467                    /usr/lib64/libgcc_s-5.1.1-20150618.so.1
+7faba1c7c000-7faba1c7d000 r--p 00015000 00:23 1543467                    /usr/lib64/libgcc_s-5.1.1-20150618.so.1
+7faba1c7d000-7faba1c7e000 rw-p 00016000 00:23 1543467                    /usr/lib64/libgcc_s-5.1.1-20150618.so.1
+7faba1c7e000-7faba1df0000 r-xp 00000000 00:23 1546940                    /usr/lib64/libstdc++.so.6.0.21
+7faba1df0000-7faba1ff0000 ---p 00172000 00:23 1546940                    /usr/lib64/libstdc++.so.6.0.21
+7faba1ff0000-7faba1ffa000 r--p 00172000 00:23 1546940                    /usr/lib64/libstdc++.so.6.0.21
+7faba1ffa000-7faba1ffc000 rw-p 0017c000 00:23 1546940                    /usr/lib64/libstdc++.so.6.0.21
+7faba1ffc000-7faba4000000 rw-p 00000000 00:00 0 
+7faba4000000-7faba4034000 rw-p 00000000 00:00 0 
+7faba4034000-7faba8000000 ---p 00000000 00:00 0 
+7faba8000000-7faba8045000 rw-p 00000000 00:00 0 
+7faba8045000-7fabac000000 ---p 00000000 00:00 0 
+7fabac000000-7fabac03d000 rw-p 00000000 00:00 0 
+7fabac03d000-7fabb0000000 ---p 00000000 00:00 0 
+7fabb0000000-7fabb0001000 r--s 00006000 00:23 26013766                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/plexus-sec-dispatcher-1.3.jar
+7fabb0001000-7fabb000d000 r--s 0007d000 00:23 26013738                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/maven-core-3.0.4.jar
+7fabb000d000-7fabb0012000 r--s 0002a000 00:23 26013744                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gson-2.2.4.jar
+7fabb0012000-7fabb0021000 r--s 000d9000 00:23 26013757                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/ivy-2.2.0.jar
+7fabb0021000-7fabb003d000 r--s 000ca000 00:23 26013725                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/plugins/gradle-dependency-management-2.7.jar
+7fabb003d000-7fabb0041000 r-xp 00000000 00:23 3894689                    /home/aboriero/.gradle/native/19/linux-amd64/libnative-platform.so
+7fabb0041000-7fabb0240000 ---p 00004000 00:23 3894689                    /home/aboriero/.gradle/native/19/linux-amd64/libnative-platform.so
+7fabb0240000-7fabb0241000 rw-p 00003000 00:23 3894689                    /home/aboriero/.gradle/native/19/linux-amd64/libnative-platform.so
+7fabb0241000-7fabb0252000 r-xp 00000000 00:23 1072234                    /opt/jdk1.8.0_60/jre/lib/amd64/libnio.so
+7fabb0252000-7fabb0451000 ---p 00011000 00:23 1072234                    /opt/jdk1.8.0_60/jre/lib/amd64/libnio.so
+7fabb0451000-7fabb0452000 rw-p 00010000 00:23 1072234                    /opt/jdk1.8.0_60/jre/lib/amd64/libnio.so
+7fabb0452000-7fabb0468000 r-xp 00000000 00:23 1072260                    /opt/jdk1.8.0_60/jre/lib/amd64/libnet.so
+7fabb0468000-7fabb0668000 ---p 00016000 00:23 1072260                    /opt/jdk1.8.0_60/jre/lib/amd64/libnet.so
+7fabb0668000-7fabb0669000 rw-p 00016000 00:23 1072260                    /opt/jdk1.8.0_60/jre/lib/amd64/libnet.so
+7fabb0669000-7fabb066a000 r--s 00006000 00:23 26013641                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-wrapper-2.7.jar
+7fabb066a000-7fabb0676000 r--s 00039000 00:23 26013646                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-tooling-api-2.7.jar
+7fabb0676000-7fabb0678000 r--s 00002000 00:23 26013668                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-open-api-2.7.jar
+7fabb0678000-7fabb067e000 r--s 00032000 00:23 26013670                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/jaxen-1.1.jar
+7fabb067e000-7fabb0683000 r--s 00048000 00:23 26013669                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/dom4j-1.6.1.jar
+7fabb0683000-7fabb068e000 r--s 00059000 00:23 26013645                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-ui-2.7.jar
+7fabb068e000-7fabb0691000 r--s 00008000 00:23 26013664                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-resources-2.7.jar
+7fabb0691000-7fabb0693000 r--s 00007000 00:23 26013686                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/objenesis-1.2.jar
+7fabb0693000-7fabb0695000 r--s 00000000 00:23 26013685                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/minlog-1.2.jar
+7fabb0695000-7fabb0697000 r--s 0000f000 00:23 26013684                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/reflectasm-1.07-shaded.jar
+7fabb0697000-7fabb069b000 r--s 00026000 00:23 26013675                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/kryo-2.20.jar
+7fabb069b000-7fabb06a4000 r--s 0003f000 00:23 26013663                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-messaging-2.7.jar
+7fabb06a4000-7fabb06a5000 r--s 00003000 00:23 26013683                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/native-platform-freebsd-amd64-0.10.jar
+7fabb06a5000-7fabb06a6000 r--s 00003000 00:23 26013682                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/native-platform-freebsd-i386-0.10.jar
+7fabb06a6000-7fabb06a7000 r--s 00005000 00:23 26013681                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/native-platform-windows-i386-0.10.jar
+7fabb06a7000-7fabb06a8000 r--s 00005000 00:23 26013680                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/native-platform-windows-amd64-0.10.jar
+7fabb06a8000-7fabb06a9000 r--s 00003000 00:23 26013679                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/native-platform-linux-i386-0.10.jar
+7fabb06a9000-7fabb06aa000 r--s 00003000 00:23 26013678                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/native-platform-linux-amd64-0.10.jar
+7fabb06aa000-7fabb06ab000 r--s 00002000 00:23 26013677                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/native-platform-osx-amd64-0.10.jar
+7fabb06ab000-7fabb06ac000 r--s 00002000 00:23 26013676                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/native-platform-osx-i386-0.10.jar
+7fabb06ac000-7fabb06ae000 r--s 00008000 00:23 26013673                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/jansi-1.2.1.jar
+7fabb06ae000-7fabb06b1000 r--s 0000d000 00:23 26013672                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/native-platform-0.10.jar
+7fabb06b1000-7fabb06b5000 r--s 000e4000 00:23 26013671                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/jna-3.2.7.jar
+7fabb06b5000-7fabb06b7000 r--s 00008000 00:23 26013647                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-native-2.7.jar
+7fabb06b7000-7fabb06b9000 r--s 00005000 00:23 26013644                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-cli-2.7.jar
+7fabb06b9000-7fabb06ba000 r--s 00007000 00:23 26013653                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-model-groovy-2.7.jar
+7fabb06ba000-7fabb06bb000 r--s 00006000 00:23 26013662                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-base-services-groovy-2.7.jar
+7fabb06bb000-7fabb06c5000 r--s 00057000 00:23 26013652                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-model-core-2.7.jar
+7fabb06c5000-7fabb06c6000 r--s 00000000 00:23 26013665                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-docs-2.7.jar
+7fabb06c6000-7fabb06c8000 r--s 00003000 00:23 26013667                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/jcl-over-slf4j-1.7.10.jar
+7fabb06c8000-7fabb06c9000 r--s 00005000 00:23 26013666                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/log4j-over-slf4j-1.7.10.jar
+7fabb06c9000-7fabb06ca000 r--s 00000000 00:23 26013661                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/javax.inject-1.jar
+7fabb06ca000-7fabb06cd000 r--s 0001b000 00:23 26013660                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/jarjar-1.3.jar
+7fabb06cd000-7fabb06d0000 r--s 00018000 00:23 26013657                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/commons-io-1.4.jar
+7fabb06d0000-7fabb06de000 r--s 0007f000 00:23 26013656                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/commons-collections-3.2.1.jar
+7fabb06de000-7fabb06e3000 r--s 00036000 00:23 26013654                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/asm-all-5.0.3.jar
+7fabb06e3000-7fabb074f000 r--s 00689000 00:23 26013651                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/groovy-all-2.3.10.jar
+7fabb074f000-7fabb0754000 r--s 00041000 00:23 26013650                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/commons-lang-2.6.jar
+7fabb0754000-7fabb077c000 r--s 001cf000 00:23 26013649                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/guava-jdk5-17.0.jar
+7fabb077c000-7fabb079b000 r--s 001cc000 00:23 26013655                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/ant-1.9.3.jar
+7fabb079b000-7fabb07b7000 r--s 00393000 00:23 1072316                    /opt/jdk1.8.0_60/jre/lib/ext/cldrdata.jar
+7fabb07b7000-7fabb07c2000 r--s 00116000 00:23 1072314                    /opt/jdk1.8.0_60/jre/lib/ext/localedata.jar
+7fabb07c2000-7fabb07f8000 r--s 001b5000 00:23 26013643                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-core-2.7.jar
+7fabb07f8000-7fabb07f9000 ---p 00000000 00:00 0 
+7fabb07f9000-7fabb08f9000 rw-p 00000000 00:00 0                          [stack:6483]
+7fabb08f9000-7fabb08fc000 ---p 00000000 00:00 0 
+7fabb08fc000-7fabb09fa000 rw-p 00000000 00:00 0                          [stack:6482]
+7fabb09fa000-7fabb09fd000 ---p 00000000 00:00 0 
+7fabb09fd000-7fabb0afb000 rw-p 00000000 00:00 0                          [stack:6481]
+7fabb0afb000-7fabb0afe000 ---p 00000000 00:00 0 
+7fabb0afe000-7fabb0bfc000 rw-p 00000000 00:00 0                          [stack:6480]
+7fabb0bfc000-7fabb0bff000 ---p 00000000 00:00 0 
+7fabb0bff000-7fabb0cfd000 rw-p 00000000 00:00 0                          [stack:6479]
+7fabb0cfd000-7fabb0d00000 ---p 00000000 00:00 0 
+7fabb0d00000-7fabb0dfe000 rw-p 00000000 00:00 0                          [stack:6478]
+7fabb0dfe000-7fabb0e01000 ---p 00000000 00:00 0 
+7fabb0e01000-7fabb0eff000 rw-p 00000000 00:00 0                          [stack:6477]
+7fabb0eff000-7fabb0f02000 ---p 00000000 00:00 0 
+7fabb0f02000-7fabb1000000 rw-p 00000000 00:00 0                          [stack:6476]
+7fabb1000000-7fabb71c0000 rwxp 00000000 00:00 0 
+7fabb71c0000-7fabc0000000 ---p 00000000 00:00 0 
+7fabc0000000-7fabc0b6c000 rw-p 00000000 00:00 0 
+7fabc0b6c000-7fabc4000000 ---p 00000000 00:00 0 
+7fabc4000000-7fabc4002000 r--s 00000000 00:23 26013659                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/jul-to-slf4j-1.7.10.jar
+7fabc4002000-7fabc400c000 r--s 0004a000 00:23 26013640                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-launcher-2.7.jar
+7fabc400c000-7fabc400d000 ---p 00000000 00:00 0 
+7fabc400d000-7fabc50c1000 rw-p 00000000 00:00 0                          [stack:6475]
+7fabc50c1000-7fabc5297000 r--s 03cd4000 00:23 1072214                    /opt/jdk1.8.0_60/jre/lib/rt.jar
+7fabc5297000-7fabc5d0d000 rw-p 00000000 00:00 0 
+7fabc5d0d000-7fabc5d0e000 ---p 00000000 00:00 0 
+7fabc5d0e000-7fabc5e0e000 rw-p 00000000 00:00 0                          [stack:6474]
+7fabc5e0e000-7fabc5e0f000 ---p 00000000 00:00 0 
+7fabc5e0f000-7fabc5f0f000 rw-p 00000000 00:00 0                          [stack:6473]
+7fabc5f0f000-7fabc5f10000 ---p 00000000 00:00 0 
+7fabc5f10000-7fabc6010000 rw-p 00000000 00:00 0                          [stack:6472]
+7fabc6010000-7fabc6011000 ---p 00000000 00:00 0 
+7fabc6011000-7fabc6267000 rw-p 00000000 00:00 0                          [stack:6471]
+7fabc6267000-7fabc63bc000 rw-p 00000000 00:00 0 
+7fabc63bc000-7fabc6466000 rw-p 00000000 00:00 0 
+7fabc6466000-7fabc6467000 ---p 00000000 00:00 0 
+7fabc6467000-7fabc65ef000 rw-p 00000000 00:00 0 
+7fabc65ef000-7fabc6828000 ---p 00000000 00:00 0 
+7fabc6828000-7fabc6842000 r-xp 00000000 00:23 1072239                    /opt/jdk1.8.0_60/jre/lib/amd64/libzip.so
+7fabc6842000-7fabc6a42000 ---p 0001a000 00:23 1072239                    /opt/jdk1.8.0_60/jre/lib/amd64/libzip.so
+7fabc6a42000-7fabc6a43000 rw-p 0001a000 00:23 1072239                    /opt/jdk1.8.0_60/jre/lib/amd64/libzip.so
+7fabc6a43000-7fabc6a4f000 r-xp 00000000 00:23 4123371                    /usr/lib64/libnss_files-2.21.so
+7fabc6a4f000-7fabc6c4e000 ---p 0000c000 00:23 4123371                    /usr/lib64/libnss_files-2.21.so
+7fabc6c4e000-7fabc6c4f000 r--p 0000b000 00:23 4123371                    /usr/lib64/libnss_files-2.21.so
+7fabc6c4f000-7fabc6c50000 rw-p 0000c000 00:23 4123371                    /usr/lib64/libnss_files-2.21.so
+7fabc6c50000-7fabc6c7a000 r-xp 00000000 00:23 1072232                    /opt/jdk1.8.0_60/jre/lib/amd64/libjava.so
+7fabc6c7a000-7fabc6e7a000 ---p 0002a000 00:23 1072232                    /opt/jdk1.8.0_60/jre/lib/amd64/libjava.so
+7fabc6e7a000-7fabc6e7c000 rw-p 0002a000 00:23 1072232                    /opt/jdk1.8.0_60/jre/lib/amd64/libjava.so
+7fabc6e7c000-7fabc6e89000 r-xp 00000000 00:23 1072274                    /opt/jdk1.8.0_60/jre/lib/amd64/libverify.so
+7fabc6e89000-7fabc7089000 ---p 0000d000 00:23 1072274                    /opt/jdk1.8.0_60/jre/lib/amd64/libverify.so
+7fabc7089000-7fabc708b000 rw-p 0000d000 00:23 1072274                    /opt/jdk1.8.0_60/jre/lib/amd64/libverify.so
+7fabc708b000-7fabc7092000 r-xp 00000000 00:23 4123383                    /usr/lib64/librt-2.21.so
+7fabc7092000-7fabc7291000 ---p 00007000 00:23 4123383                    /usr/lib64/librt-2.21.so
+7fabc7291000-7fabc7292000 r--p 00006000 00:23 4123383                    /usr/lib64/librt-2.21.so
+7fabc7292000-7fabc7293000 rw-p 00007000 00:23 4123383                    /usr/lib64/librt-2.21.so
+7fabc7293000-7fabc739a000 r-xp 00000000 00:23 4123361                    /usr/lib64/libm-2.21.so
+7fabc739a000-7fabc7599000 ---p 00107000 00:23 4123361                    /usr/lib64/libm-2.21.so
+7fabc7599000-7fabc759a000 r--p 00106000 00:23 4123361                    /usr/lib64/libm-2.21.so
+7fabc759a000-7fabc759b000 rw-p 00107000 00:23 4123361                    /usr/lib64/libm-2.21.so
+7fabc759b000-7fabc824e000 r-xp 00000000 00:23 1072279                    /opt/jdk1.8.0_60/jre/lib/amd64/server/libjvm.so
+7fabc824e000-7fabc844d000 ---p 00cb3000 00:23 1072279                    /opt/jdk1.8.0_60/jre/lib/amd64/server/libjvm.so
+7fabc844d000-7fabc8525000 rw-p 00cb2000 00:23 1072279                    /opt/jdk1.8.0_60/jre/lib/amd64/server/libjvm.so
+7fabc8525000-7fabc856a000 rw-p 00000000 00:00 0 
+7fabc856a000-7fabc8721000 r-xp 00000000 00:23 4123353                    /usr/lib64/libc-2.21.so
+7fabc8721000-7fabc8920000 ---p 001b7000 00:23 4123353                    /usr/lib64/libc-2.21.so
+7fabc8920000-7fabc8924000 r--p 001b6000 00:23 4123353                    /usr/lib64/libc-2.21.so
+7fabc8924000-7fabc8926000 rw-p 001ba000 00:23 4123353                    /usr/lib64/libc-2.21.so
+7fabc8926000-7fabc892a000 rw-p 00000000 00:00 0 
+7fabc892a000-7fabc892d000 r-xp 00000000 00:23 4123359                    /usr/lib64/libdl-2.21.so
+7fabc892d000-7fabc8b2c000 ---p 00003000 00:23 4123359                    /usr/lib64/libdl-2.21.so
+7fabc8b2c000-7fabc8b2d000 r--p 00002000 00:23 4123359                    /usr/lib64/libdl-2.21.so
+7fabc8b2d000-7fabc8b2e000 rw-p 00003000 00:23 4123359                    /usr/lib64/libdl-2.21.so
+7fabc8b2e000-7fabc8b43000 r-xp 00000000 00:23 1072564                    /opt/jdk1.8.0_60/lib/amd64/jli/libjli.so
+7fabc8b43000-7fabc8d43000 ---p 00015000 00:23 1072564                    /opt/jdk1.8.0_60/lib/amd64/jli/libjli.so
+7fabc8d43000-7fabc8d44000 rw-p 00015000 00:23 1072564                    /opt/jdk1.8.0_60/lib/amd64/jli/libjli.so
+7fabc8d44000-7fabc8d5b000 r-xp 00000000 00:23 4123379                    /usr/lib64/libpthread-2.21.so
+7fabc8d5b000-7fabc8f5a000 ---p 00017000 00:23 4123379                    /usr/lib64/libpthread-2.21.so
+7fabc8f5a000-7fabc8f5b000 r--p 00016000 00:23 4123379                    /usr/lib64/libpthread-2.21.so
+7fabc8f5b000-7fabc8f5c000 rw-p 00017000 00:23 4123379                    /usr/lib64/libpthread-2.21.so
+7fabc8f5c000-7fabc8f60000 rw-p 00000000 00:00 0 
+7fabc8f60000-7fabc8f81000 r-xp 00000000 00:23 4123346                    /usr/lib64/ld-2.21.so
+7fabc8f81000-7fabc8f87000 r--s 00032000 00:23 26013642                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-base-services-2.7.jar
+7fabc8f87000-7fabc9059000 rw-p 00000000 00:00 0 
+7fabc9059000-7fabc905c000 ---p 00000000 00:00 0 
+7fabc905c000-7fabc915e000 rw-p 00000000 00:00 0                          [stack:6467]
+7fabc915e000-7fabc915f000 r--s 00000000 00:23 26013658                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/jcip-annotations-1.0.jar
+7fabc915f000-7fabc9160000 r--s 00007000 00:23 26013648                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/slf4j-api-1.7.10.jar
+7fabc9160000-7fabc9161000 r--s 00004000 00:23 26013674                   /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/ant-launcher-1.9.3.jar
+7fabc9161000-7fabc9175000 rw-p 00000000 00:00 0 
+7fabc9175000-7fabc917d000 rw-s 00000000 00:27 2888765                    /tmp/hsperfdata_aboriero/6466
+7fabc917d000-7fabc917e000 rw-p 00000000 00:00 0 
+7fabc917e000-7fabc917f000 r--p 00000000 00:00 0 
+7fabc917f000-7fabc9180000 rw-p 00000000 00:00 0 
+7fabc9180000-7fabc9181000 r--p 00020000 00:23 4123346                    /usr/lib64/ld-2.21.so
+7fabc9181000-7fabc9182000 rw-p 00021000 00:23 4123346                    /usr/lib64/ld-2.21.so
+7fabc9182000-7fabc9183000 rw-p 00000000 00:00 0 
+7ffd13681000-7ffd136a3000 rw-p 00000000 00:00 0                          [stack]
+7ffd136ce000-7ffd136d0000 r--p 00000000 00:00 0                          [vvar]
+7ffd136d0000-7ffd136d2000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -XX:MaxPermSize=256m -XX:+HeapDumpOnOutOfMemoryError -Xmx1024m -Dfile.encoding=UTF-8 -Duser.country=GB -Duser.language=en -Duser.variant 
+java_command: org.gradle.launcher.daemon.bootstrap.GradleDaemon 2.7
+java_class_path (initial): /home/aboriero/.gradle/wrapper/dists/gradle-2.7-all/4ryh47z6pv2tj9n03uiw8pzc6/gradle-2.7/lib/gradle-launcher-2.7.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/opt/jdk-sun-8
+JRE_HOME=/opt/jdk-sun-8/jre
+PATH=/opt/jdk-sun-8/bin:/opt/ant/bin:/usr/lib/jvm/java-1.7.0-openjdk.x86_64//bin:/home/aboriero/bin:/opt/ant/bin:/opt/maven/bin/:/opt/maven-1.0.x/bin/:/opt/ant/bin:/usr/lib/jvm/java-1.7.0-openjdk.x86_64//bin:/home/aboriero/bin:/opt/ant/bin:/opt/maven/bin/:/opt/maven-1.0.x/bin/:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/aboriero/.rvm/bin:/home/aboriero/.local/bin:/home/aboriero/bin:/home/aboriero/.rvm/bin
+USERNAME=aboriero
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xab0b20], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xab0b20], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x90e890], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x90e890], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x90e890], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x90e890], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x90fed0], sa_mask[0]=00100000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x911220], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.so+0x911220], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [libjvm.so+0x911220], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0x911220], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Fedora release 22 (Twenty Two)
+
+uname:Linux 4.2.5-201.fc22.x86_64 #1 SMP Wed Oct 28 20:00:23 UTC 2015 x86_64
+libc:glibc 2.21 NPTL 2.21 
+rlimit: STACK 8192k, CORE 0k, NPROC 4096, NOFILE 4096, AS infinity
+load average:1.01 0.62 0.67
+
+/proc/meminfo:
+MemTotal:       11989012 kB
+MemFree:          764352 kB
+MemAvailable:    1993944 kB
+Buffers:              60 kB
+Cached:          1960964 kB
+SwapCached:         6748 kB
+Active:          8844992 kB
+Inactive:        1869504 kB
+Active(anon):    8129656 kB
+Inactive(anon):  1483348 kB
+Active(file):     715336 kB
+Inactive(file):   386156 kB
+Unevictable:         356 kB
+Mlocked:             356 kB
+SwapTotal:       6037500 kB
+SwapFree:        4466292 kB
+Dirty:             53796 kB
+Writeback:             0 kB
+AnonPages:       8750016 kB
+Mapped:           756556 kB
+Shmem:            859468 kB
+Slab:             257232 kB
+SReclaimable:     179760 kB
+SUnreclaim:        77472 kB
+KernelStack:       18400 kB
+PageTables:       124292 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    12032004 kB
+Committed_AS:   21788060 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      395892 kB
+VmallocChunk:   34358947836 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:     2549660 kB
+DirectMap2M:     9713664 kB
+DirectMap1G:     1048576 kB
+
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 69 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 69
+model name	: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz
+stepping	: 1
+microcode	: 0x1c
+cpu MHz		: 3142.230
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bugs		:
+bogomips	: 5387.42
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 69
+model name	: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz
+stepping	: 1
+microcode	: 0x1c
+cpu MHz		: 3142.019
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bugs		:
+bogomips	: 5387.42
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 69
+model name	: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz
+stepping	: 1
+microcode	: 0x1c
+cpu MHz		: 3292.839
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bugs		:
+bogomips	: 5387.42
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 69
+model name	: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz
+stepping	: 1
+microcode	: 0x1c
+cpu MHz		: 3004.804
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bugs		:
+bogomips	: 5387.42
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 11989012k(764352k free), swap 6037500k(4466292k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.60-b07) for linux-amd64 JRE (1.8.0_60-ea-b07), built on Mar 17 2015 19:16:30 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Wed Nov 11 16:50:27 2015
+elapsed time: 7737 seconds (0d 2h 8m 57s)
+

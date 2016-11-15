@@ -1,0 +1,1039 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Enfant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirFrere -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirFrere"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirOncle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirOncle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Sexe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirNom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirNom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Enfant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Enfant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Mère -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Mère">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Père -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Père">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Sexe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Sexe"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Anna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Anna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Mère"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Père"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdf:type>
+        <avoirEnfants rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#John"/>
+        <épouser rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Marc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Enfant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdf:type>
+        <avoirMère rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Anna"/>
+        <avoirPère rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Anna"/>
+        <avoirMère rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Marc"/>
+        <avoirPère rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Marc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Marc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Marc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Mère"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Père"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdf:type>
+        <avoirEnfants rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#John"/>
+        <avoirSexe rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+        <épouser rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Anna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Tina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Tina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdf:type>
+        <avoirSexe rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Victor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Victor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdf:type>
+        <avoirSexe rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Sexe"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female"/>
+                </owl:oneOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Sexe"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+                </owl:oneOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Restriction>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Femme"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Mère"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Homme"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirEnfants"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Père"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Enfant"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#female"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirSexe"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#male"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#épouser"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirMère"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#Personne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Restriction>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirPère"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirFrere"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#y"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#avoirOncle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2016/6/untitled-ontology-3#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

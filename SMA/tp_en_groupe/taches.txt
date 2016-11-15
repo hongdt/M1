@@ -1,0 +1,5 @@
+1. faire GUI
+2. traiter des données
+3. traiter la communication entre des agents (seulement envoyer/recevoir le message)
+4. coder la fonction pour résoudre des conflits, ici on a besoin d'une fonction évalution
+tâche 4 est la plus difficile et la plus importante

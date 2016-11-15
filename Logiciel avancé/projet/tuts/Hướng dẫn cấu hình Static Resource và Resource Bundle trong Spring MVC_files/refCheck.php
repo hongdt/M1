@@ -1,0 +1,1 @@
+admVsldr_obj.adm_vsld_refCheck({"res":1,"exclude":"&sxch=1","ref":"http:\/\/o7planning.org\/vi\/10959\/spring-framework","url":"o7planning.org"});

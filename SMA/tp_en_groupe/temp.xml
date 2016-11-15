@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <TTGS College_Name="IFI" Department_Name="IFI">
+        <Days_List>
+            <Day>
+                <Name>Lundi</Name>
+            </Day>
+            <Day>
+                <Name>Mardi</Name>
+            </Day>
+            <Day>
+                <Name>Mercredi</Name>
+            </Day>
+            <Day>
+                <Name>Jeudi</Name>
+            </Day>
+            <Day>
+                <Name>Vendredi</Name>
+            </Day>
+        </Days_List>
+        <Hours_List>
+            <Hour>
+                <Name>8.30</Name>
+            </Hour>
+            <Hour>
+                <Name>11.30</Name>
+            </Hour>
+            <Hour>
+                <Name>14.00</Name>
+            </Hour>
+            <Hour>
+                <Name>17.00</Name>
+            </Hour>
+        </Hours_List>
+        <Students_List>
+            <Student>
+                <Name>Systèmes intelligents</Name>
+                <Strength>50</Strength>
+                <Group ID="0">
+                    <Name>M1</Name>
+                    <Strength>20</Strength>
+                </Group>
+                <Group ID="1">
+                    <Name>M2</Name>
+                    <Strength>30</Strength>
+                </Group>
+            </Student>
+            <Student>
+                <Name>Français</Name>
+                <Strength>100</Strength>
+                <Group ID="0">
+                    <Name>M1</Name>
+                    <Strength>20</Strength>
+                </Group>
+                <Group ID="1">
+                    <Name>M2</Name>
+                    <Strength>50</Strength>
+                </Group>
+                <Group ID="2">
+                    <Name>Doctorat</Name>
+                    <Strength>30</Strength>
+                </Group>
+            </Student>
+        </Students_List>
+        <Teachers_List>
+            <Teacher>
+                <Name>Vinh</Name>
+                <Type>Theorie</Type>
+            </Teacher>
+            <Teacher>
+                <Name>Quang</Name>
+                <Type>Pratique</Type>
+            </Teacher>
+            <Teacher>
+                <Name>Choan</Name>
+                <Type>Pratique</Type>
+            </Teacher>
+            <Teacher>
+                <Name>Minh</Name>
+                <Type>Theorie</Type>
+            </Teacher>
+            <Teacher>
+                <Name>Pham</Name>
+                <Type>Theorie</Type>
+            </Teacher>
+            <Teacher>
+                <Name>Eric</Name>
+                <Type>Theorie</Type>
+            </Teacher>
+        </Teachers_List>
+        <Subjects_List>
+            <Subject>
+                <Name>IA</Name>
+                <No_Theory>2</No_Theory>
+                <No_Practical>1</No_Practical>
+            </Subject>
+            <Subject>
+                <Name>Complexité</Name>
+                <No_Theory>1</No_Theory>
+                <No_Practical>2</No_Practical>
+            </Subject>
+            <Subject>
+                <Name>Unix</Name>
+                <No_Theory>1</No_Theory>
+                <No_Practical>1</No_Practical>
+            </Subject>
+            <Subject>
+                <Name>Statistique</Name>
+                <No_Theory>1</No_Theory>
+                <No_Practical>1</No_Practical>
+            </Subject>
+        </Subjects_List>
+        <Rooms_List>
+            <Room>
+                <Name>Amphi 100</Name>
+                <Type>SALLE</Type>
+                <Capacity>100</Capacity>
+            </Room>
+            <Room>
+                <Name>Labo 50</Name>
+                <Type>LAB0</Type>
+                <Capacity>50</Capacity>
+            </Room>
+            <Room>
+                <Name>Salle 50</Name>
+                <Type>LAB0</Type>
+                <Capacity>50</Capacity>
+            </Room>
+            <Room>
+                <Name>Salle 150</Name>
+                <Type>SALLE</Type>
+                <Capacity>150</Capacity>
+            </Room>
+            <Room>
+                <Name>Labo 70</Name>
+                <Type>LAB0</Type>
+                <Capacity>70</Capacity>
+            </Room>
+        </Rooms_List>
+        <Subjects_Alloc_List>
+            <SubjectAlloc>
+                <Name>IA</Name>
+                <Theory>
+                    <Teacher>Vinh</Teacher>
+                    <Student>Systèmes intelligents</Student>
+                </Theory>
+                <Practical>
+                    <Teacher>Choan</Teacher>
+                    <Student>M1</Student>
+                    <Student>M2</Student>
+                </Practical>
+            </SubjectAlloc>
+            <SubjectAlloc>
+                <Name>Complexité</Name>
+                <Theory>
+                    <Teacher>Quang</Teacher>
+                    <Student>Systèmes intelligents</Student>
+                </Theory>
+                <Practical>
+                    <Teacher>Quang</Teacher>
+                    <Student>M1</Student>
+                    <Student>M2</Student>
+                </Practical>
+            </SubjectAlloc>
+            <SubjectAlloc>
+                <Name>Unix</Name>
+                <Theory>
+                    <Teacher>Choan</Teacher>
+                    <Student>Systèmes intelligents</Student>
+                </Theory>
+                <Practical>
+                    <Teacher>Eric</Teacher>
+                    <Student>M1</Student>
+                    <Student>M2</Student>
+                </Practical>
+            </SubjectAlloc>
+            <SubjectAlloc>
+                <Name>Statistique</Name>
+                <Theory>
+                    <Teacher>Pham</Teacher>
+                    <Student>Français</Student>
+                </Theory>
+                <Practical>
+                    <Teacher>Minh</Teacher>
+                    <Student>M1</Student>
+                    <Student>M2</Student>
+                    <Student>Doctorat</Student>
+                </Practical>
+            </SubjectAlloc>
+        </Subjects_Alloc_List>
+        <Activity_List>
+            <Activity Duration="1" ID="0" Student="Systèmes intelligents" Subject="IA" Tag="TH" Teacher="Vinh">
+                <Room>-Not alloacte yet-</Room>
+            </Activity>
+            <Activity Duration="1" ID="1" Student="Systèmes intelligents" Subject="IA" Tag="TH" Teacher="Vinh">
+                <Room>-Not alloacte yet-</Room>
+            </Activity>
+            <Activity Duration="2" ID="2" Student="M1" Subject="IA" Tag="TUT" Teacher="Choan" />
+            <Activity Duration="2" ID="3" Student="M2" Subject="IA" Tag="TUT" Teacher="Choan" />
+            <Activity Duration="1" ID="4" Student="Systèmes intelligents" Subject="Complexité" Tag="TH" Teacher="Quang">
+                <Room>-Not alloacte yet-</Room>
+            </Activity>
+            <Activity Duration="2" ID="5" Student="M1" Subject="Complexité" Tag="PR" Teacher="Quang" />
+            <Activity Duration="2" ID="6" Student="M2" Subject="Complexité" Tag="PR" Teacher="Quang" />
+            <Activity Duration="1" ID="7" Student="Systèmes intelligents" Subject="Unix" Tag="TH" Teacher="Choan">
+                <Room>-Not alloacte yet-</Room>
+            </Activity>
+            <Activity Duration="2" ID="8" Student="M1" Subject="Unix" Tag="TUT" Teacher="Eric" />
+            <Activity Duration="2" ID="9" Student="M2" Subject="Unix" Tag="TUT" Teacher="Eric" />
+            <Activity Duration="1" ID="10" Student="Français" Subject="Statistique" Tag="TH" Teacher="Pham">
+                <Room>-Not alloacte yet-</Room>
+            </Activity>
+            <Activity Duration="2" ID="11" Student="M1" Subject="Statistique" Tag="TUT" Teacher="Minh" />
+            <Activity Duration="2" ID="12" Student="M2" Subject="Statistique" Tag="TUT" Teacher="Minh" />
+            <Activity Duration="2" ID="13" Student="Doctorat" Subject="Statistique" Tag="TUT" Teacher="Minh" />
+        </Activity_List>
+    </TTGS>

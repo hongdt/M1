@@ -1,0 +1,1 @@
+admVsldr_obj.adm_vsld_refCheck({"res":1,"exclude":"&sxch=1","ref":null,"url":null});
